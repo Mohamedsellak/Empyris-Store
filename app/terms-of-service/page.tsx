@@ -67,12 +67,12 @@ export default function TermsOfServicePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">1. Acceptation des Conditions</h2>
             <p className="text-gray-700 mb-4">
-              En accédant à notre site Web, vous acceptez d'être lié par ces Conditions d'utilisation et de vous conformer à toutes les lois et réglementations applicables.
+              En accédant à notre site Web, vous acceptez d&apos;être lié par ces Conditions d&apos;utilisation et de vous conformer à toutes les lois et réglementations applicables.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Licence d'Utilisation</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">2. Licence d&apos;Utilisation</h2>
             <p className="text-gray-700 mb-4">
-              L'autorisation est accordée de télécharger temporairement une copie des matériaux sur notre site Web pour une visualisation personnelle et non commerciale uniquement.
+              L&apos;autorisation est accordée de télécharger temporairement une copie des matériaux sur notre site Web pour une visualisation personnelle et non commerciale uniquement.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Produits et Services</h2>
@@ -87,17 +87,17 @@ export default function TermsOfServicePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Modifications du Service</h2>
             <p className="text-gray-700 mb-4">
-              Nous nous réservons le droit de modifier ou d'interrompre le Service (ou toute partie de celui-ci) sans préavis à tout moment.
+              Nous nous réservons le droit de modifier ou d&apos;interrompre le Service (ou toute partie de celui-ci) sans préavis à tout moment.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Utilisations Interdites</h2>
             <p className="text-gray-700 mb-4">
-              Vous ne pouvez pas utiliser nos produits ou services à des fins illégales ou non autorisées, ni violer les lois de votre juridiction lors de l'utilisation du Service.
+              Vous ne pouvez pas utiliser nos produits ou services à des fins illégales ou non autorisées, ni violer les lois de votre juridiction lors de l&apos;utilisation du Service.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Limitation de Responsabilité</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              En aucun cas EMPYRIS ou ses fournisseurs ne seront responsables de tout dommage (y compris, sans limitation, les dommages pour perte de données ou de profit) découlant de l'utilisation ou de l'impossibilité d'utiliser notre service.
+              En aucun cas EMPYRIS ou ses fournisseurs ne seront responsables de tout dommage (y compris, sans limitation, les dommages pour perte de données ou de profit) découlant de l&apos;utilisation ou de l&apos;impossibilité d&apos;utiliser notre service.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Loi Applicable</h2>
@@ -107,7 +107,7 @@ export default function TermsOfServicePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contactez-Nous</h2>
             <p className="text-gray-700 mb-4">
-              Si vous avez des questions concernant ces Conditions d'utilisation, veuillez nous contacter à support@store.com
+              Si vous avez des questions concernant ces Conditions d&apos;utilisation, veuillez nous contacter à support@store.com
             </p>
           </>
         )}

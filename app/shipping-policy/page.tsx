@@ -63,9 +63,9 @@ export default function ShippingPolicyPage() {
               Toutes les commandes sont traitées dans un délai de 1 à 2 jours ouvrables. Les commandes ne sont pas expédiées ou livrées le week-end ou les jours fériés.
             </p>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Tarifs d'Expédition et Estimations de Livraison</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Tarifs d&apos;Expédition et Estimations de Livraison</h2>
             <p className="text-gray-700 mb-4">
-              Les frais d'expédition pour votre commande seront calculés et affichés lors du paiement.
+              Les frais d&apos;expédition pour votre commande seront calculés et affichés lors du paiement.
             </p>
             <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
               <li><strong>Livraison Standard:</strong> 5-7 jours ouvrables</li>
@@ -75,25 +75,25 @@ export default function ShippingPolicyPage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Expédition Internationale</h2>
             <p className="text-gray-700 mb-4">
-              Nous expédions au Royaume-Uni et en France. Les délais d'expédition internationale varient selon l'emplacement mais prennent généralement 7 à 14 jours ouvrables.
+              Nous expédions au Royaume-Uni et en France. Les délais d&apos;expédition internationale varient selon l&apos;emplacement mais prennent généralement 7 à 14 jours ouvrables.
             </p>
             <p className="text-gray-700 mb-4">
-              Des frais de douane et des taxes à l'importation peuvent s'appliquer et sont à la charge du client.
+              Des frais de douane et des taxes à l&apos;importation peuvent s&apos;appliquer et sont à la charge du client.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Suivi de Commande</h2>
             <p className="text-gray-700 mb-4">
-              Vous recevrez un email de confirmation d'expédition avec les informations de suivi une fois votre commande expédiée.
+              Vous recevrez un email de confirmation d&apos;expédition avec les informations de suivi une fois votre commande expédiée.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Colis Endommagés ou Perdus</h2>
             <p className="text-gray-700 mb-4">
-              Si vous recevez un colis endommagé, veuillez nous contacter immédiatement avec des photos des dommages. Pour les expéditions perdues, veuillez attendre 10 jours ouvrables à compter de la date d'expédition avant de nous contacter.
+              Si vous recevez un colis endommagé, veuillez nous contacter immédiatement avec des photos des dommages. Pour les expéditions perdues, veuillez attendre 10 jours ouvrables à compter de la date d&apos;expédition avant de nous contacter.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contactez-Nous</h2>
             <p className="text-gray-700 mb-4">
-              Pour toute question concernant l'expédition, veuillez nous contacter à support@store.com
+              Pour toute question concernant l&apos;expédition, veuillez nous contacter à support@store.com
             </p>
           </>
         )}

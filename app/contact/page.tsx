@@ -3,7 +3,7 @@
 import { useState } from 'react';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/lib/i18n';
-import { Mail, Phone, MapPin, Clock } from 'lucide-react';
+import { Mail, MapPin, Clock } from 'lucide-react';
 
 export default function ContactPage() {
   const { language } = useLanguage();

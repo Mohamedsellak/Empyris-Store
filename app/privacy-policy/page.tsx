@@ -109,9 +109,9 @@ export default function PrivacyPolicyPage() {
               <li>Améliorer notre site Web et nos services</li>
             </ul>
 
-            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Partage d'Informations</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">3. Partage d&apos;Informations</h2>
             <p className="text-gray-700 mb-4">
-              Nous ne vendons, n'échangeons ni ne louons vos informations personnelles à des tiers. Nous pouvons partager vos informations avec:
+              Nous ne vendons, n&apos;échangeons ni ne louons vos informations personnelles à des tiers. Nous pouvons partager vos informations avec:
             </p>
             <ul className="list-disc list-inside text-gray-700 mb-4 space-y-2">
               <li>Les prestataires de services qui nous aident dans nos opérations</li>
@@ -121,12 +121,12 @@ export default function PrivacyPolicyPage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">4. Sécurité des Données</h2>
             <p className="text-gray-700 mb-4">
-              Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles contre l'accès, la modification, la divulgation ou la destruction non autorisés.
+              Nous mettons en œuvre des mesures de sécurité appropriées pour protéger vos informations personnelles contre l&apos;accès, la modification, la divulgation ou la destruction non autorisés.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">5. Cookies</h2>
             <p className="text-gray-700 mb-4">
-              Nous utilisons des cookies et des technologies de suivi similaires pour améliorer votre expérience de navigation, analyser le trafic du site et comprendre d'où viennent nos visiteurs.
+              Nous utilisons des cookies et des technologies de suivi similaires pour améliorer votre expérience de navigation, analyser le trafic du site et comprendre d&apos;où viennent nos visiteurs.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">6. Vos Droits</h2>

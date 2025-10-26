@@ -18,7 +18,7 @@ export default function ReturnRefundPolicyPage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Returns</h2>
             <p className="text-gray-700 mb-4">
-              Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can't offer you a refund or exchange.
+              Our policy lasts 30 days. If 30 days have gone by since your purchase, unfortunately we can&apos;t offer you a refund or exchange.
             </p>
             <p className="text-gray-700 mb-4">
               To be eligible for a return, your item must be unused and in the same condition that you received it. It must also be in the original packaging.
@@ -34,7 +34,7 @@ export default function ReturnRefundPolicyPage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Late or Missing Refunds</h2>
             <p className="text-gray-700 mb-4">
-              If you haven't received a refund yet, first check your bank account again. Then contact your credit card company, it may take some time before your refund is officially posted.
+              If you haven&apos;t received a refund yet, first check your bank account again. Then contact your credit card company, it may take some time before your refund is officially posted.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Exchanges</h2>
@@ -56,25 +56,25 @@ export default function ReturnRefundPolicyPage() {
               Notre politique dure 30 jours. Si 30 jours se sont écoulés depuis votre achat, nous ne pouvons malheureusement pas vous offrir un remboursement ou un échange.
             </p>
             <p className="text-gray-700 mb-4">
-              Pour être éligible à un retour, votre article doit être inutilisé et dans le même état que vous l'avez reçu. Il doit également être dans l'emballage d'origine.
+              Pour être éligible à un retour, votre article doit être inutilisé et dans le même état que vous l&apos;avez reçu. Il doit également être dans l&apos;emballage d&apos;origine.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Remboursements</h2>
             <p className="text-gray-700 mb-4">
-              Une fois votre retour reçu et inspecté, nous vous enverrons un email pour vous informer que nous avons reçu votre article retourné. Nous vous informerons également de l'approbation ou du rejet de votre remboursement.
+              Une fois votre retour reçu et inspecté, nous vous enverrons un email pour vous informer que nous avons reçu votre article retourné. Nous vous informerons également de l&apos;approbation ou du rejet de votre remboursement.
             </p>
             <p className="text-gray-700 mb-4">
-              Si vous êtes approuvé, votre remboursement sera traité et un crédit sera automatiquement appliqué à votre carte de crédit ou mode de paiement d'origine, dans un certain nombre de jours.
+              Si vous êtes approuvé, votre remboursement sera traité et un crédit sera automatiquement appliqué à votre carte de crédit ou mode de paiement d&apos;origine, dans un certain nombre de jours.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Remboursements Tardifs ou Manquants</h2>
             <p className="text-gray-700 mb-4">
-              Si vous n'avez pas encore reçu de remboursement, vérifiez d'abord votre compte bancaire. Ensuite, contactez votre société de carte de crédit, cela peut prendre du temps avant que votre remboursement soit officiellement enregistré.
+              Si vous n&apos;avez pas encore reçu de remboursement, vérifiez d&apos;abord votre compte bancaire. Ensuite, contactez votre société de carte de crédit, cela peut prendre du temps avant que votre remboursement soit officiellement enregistré.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Échanges</h2>
             <p className="text-gray-700 mb-4">
-              Nous ne remplaçons les articles que s'ils sont défectueux ou endommagés. Si vous devez l'échanger contre le même article, envoyez-nous un email et envoyez votre article à l'adresse fournie dans l'email.
+              Nous ne remplaçons les articles que s&apos;ils sont défectueux ou endommagés. Si vous devez l&apos;échanger contre le même article, envoyez-nous un email et envoyez votre article à l&apos;adresse fournie dans l&apos;email.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Contactez-Nous</h2>
