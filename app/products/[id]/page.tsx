@@ -171,16 +171,14 @@ export default function ProductDetailPage() {
                   className="flex-1 text-sm sm:text-base py-2.5 sm:py-4"
                 />
                 
-                {product.buyNowLink && (
-                  <a
-                    href={product.buyNowLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 bg-orange-500 text-white px-4 py-2.5 sm:px-8 sm:py-4 text-center font-semibold hover:bg-orange-600 transition-all duration-200 rounded-md text-sm sm:text-base"
-                  >
-                    {t.buyNow}
-                  </a>
-                )}
+                <a
+                  href={`https://www.nhlv1trk.com/CPLS3PH/764X28J/?sub3=${encodeURIComponent(localizedProduct.name)}&sub4=${encodeURIComponent(`${window.location.origin}${product.image}`)}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex-1 bg-orange-500 text-white px-4 py-2.5 sm:px-8 sm:py-4 text-center font-semibold hover:bg-orange-600 transition-all duration-200 rounded-md text-sm sm:text-base"
+                >
+                  {t.buyNow}
+                </a>
               </div>
               
               {/* Payment Methods */}
