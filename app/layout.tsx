@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import { CartProvider } from "@/context/CartContext";
 import { LanguageProvider } from "@/context/LanguageContext";
+import TopBanner from "@/components/TopBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -34,6 +35,7 @@ export default function RootLayout({
       >
         <LanguageProvider>
           <CartProvider>
+            <TopBanner />
             <Navbar />
             <main className="flex-grow">
               {children}

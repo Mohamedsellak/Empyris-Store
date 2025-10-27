@@ -97,54 +97,46 @@ export default function ProductDetailPage() {
 
         {/* Product Info */}
         <div className="flex flex-col">
-          <div className="mb-4">
-            <p className="text-sm text-gray-500 uppercase tracking-wider mb-2">
+          <div className="mb-3 md:mb-4">
+            <p className="text-xs sm:text-sm text-gray-500 uppercase tracking-wider mb-1 sm:mb-2">
               {localizedProduct.category}
             </p>
-            <h1 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2 sm:mb-3 md:mb-4">
               {localizedProduct.name}
             </h1>
-            <p className="text-3xl font-bold text-gray-900">
+            <p className="text-2xl sm:text-3xl font-bold text-gray-900">
               ${product.price.toFixed(2)}
             </p>
           </div>
 
-          <div className="mb-8">
-            <h2 className="text-lg font-semibold text-gray-900 mb-2">{t.description}</h2>
-            <div 
-              className="text-gray-600 leading-relaxed"
-              dangerouslySetInnerHTML={{ __html: localizedProduct.description }}
-            />
-          </div>
-
           {/* Out of Stock Alert or Quantity Selector */}
           {!product.inStock ? (
-            <div className="mb-6 bg-red-50 border border-red-200 text-red-800 px-6 py-4 rounded-lg text-center font-medium">
+            <div className="mb-4 sm:mb-6 bg-red-50 border border-red-200 text-red-800 px-4 py-3 sm:px-6 sm:py-4 rounded-lg text-center font-medium text-sm sm:text-base">
               {language === 'en' ? 'Out of Stock' : 'Rupture de Stock'}
             </div>
           ) : (
-            <div className="mb-6">
-              <label className="block text-sm font-semibold text-gray-900 mb-3">
+            <div className="mb-4 sm:mb-6">
+              <label className="block text-xs sm:text-sm font-semibold text-gray-900 mb-2 sm:mb-3">
                 {t.quantity}
               </label>
-              <div className="flex items-center space-x-4">
+              <div className="flex items-center space-x-3 sm:space-x-4">
                 <div className="flex items-center border border-gray-300 rounded-md">
                   <button
                     onClick={handleDecrement}
-                    className="p-3 hover:bg-gray-100 transition-colors"
+                    className="p-2 sm:p-3 hover:bg-gray-100 transition-colors"
                     aria-label={t.decreaseQty}
                   >
-                    <Minus className="h-4 w-4" />
+                    <Minus className="h-3 w-3 sm:h-4 sm:w-4" />
                   </button>
-                  <span className="px-6 py-3 font-semibold text-gray-900 min-w-[60px] text-center">
+                  <span className="px-4 py-2 sm:px-6 sm:py-3 font-semibold text-gray-900 min-w-[50px] sm:min-w-[60px] text-center text-sm sm:text-base">
                     {quantity}
                   </span>
                   <button
                     onClick={handleIncrement}
-                    className="p-3 hover:bg-gray-100 transition-colors"
+                    className="p-2 sm:p-3 hover:bg-gray-100 transition-colors"
                     aria-label={t.increaseQty}
                   >
-                    <Plus className="h-4 w-4" />
+                    <Plus className="h-3 w-3 sm:h-4 sm:w-4" />
                   </button>
                 </div>
               </div>
@@ -153,50 +145,100 @@ export default function ProductDetailPage() {
 
           {/* Add to Cart Button - Only show if in stock */}
           {product.inStock && (
-            <div className="flex flex-col sm:flex-row gap-4">
-              <AddToCartButton
-                product={{
-                  id: product.id,
-                  name: localizedProduct.name,
-                  price: product.price,
-                  image: product.image,
-                }}
-                quantity={quantity}
-                className="flex-1"
-              />
+            <div>
+              <div className="flex flex-col sm:flex-row gap-3 sm:gap-4 mb-4 sm:mb-6">
+                <AddToCartButton
+                  product={{
+                    id: product.id,
+                    name: localizedProduct.name,
+                    price: product.price,
+                    image: product.image,
+                  }}
+                  quantity={quantity}
+                  className="flex-1 text-sm sm:text-base py-3 sm:py-4"
+                />
+                
+                {product.buyNowLink && (
+                  <a
+                    href={product.buyNowLink}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex-1 bg-orange-500 text-white px-6 py-3 sm:px-8 sm:py-4 text-center font-semibold hover:bg-orange-600 transition-all duration-200 rounded-md text-sm sm:text-base"
+                  >
+                    {t.buyNow}
+                  </a>
+                )}
+              </div>
               
-              {product.buyNowLink && (
-                <a
-                  href={product.buyNowLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex-1 bg-white text-black border-2 border-black px-8 py-4 text-center font-semibold hover:bg-black hover:text-white transition-all duration-200 rounded-md"
-                >
-                  {t.buyNow}
-                </a>
-              )}
+              {/* Payment Methods */}
+              <div className="flex items-center gap-2 sm:gap-3 flex-wrap">
+                <div className="bg-white rounded border border-gray-300 px-2 py-1 sm:px-3 sm:py-2 flex items-center justify-center shadow-sm">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" 
+                    alt="Visa" 
+                    className="h-4 sm:h-6 md:h-8 w-auto"
+                  />
+                </div>
+                <div className="bg-white rounded border border-gray-300 px-2 py-1 sm:px-3 sm:py-2 flex items-center justify-center shadow-sm">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" 
+                    alt="Mastercard" 
+                    className="h-4 sm:h-6 md:h-8 w-auto"
+                  />
+                </div>
+                <div className="bg-white rounded border border-gray-300 px-2 py-1 sm:px-3 sm:py-2 flex items-center justify-center shadow-sm">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg" 
+                    alt="American Express" 
+                    className="h-4 sm:h-6 md:h-8 w-auto"
+                  />
+                </div>
+                <div className="bg-white rounded border border-gray-300 px-2 py-1 sm:px-3 sm:py-2 flex items-center justify-center shadow-sm">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/5/57/Discover_Card_logo.svg" 
+                    alt="Discover" 
+                    className="h-4 sm:h-5 md:h-6 w-auto"
+                  />
+                </div>
+                <div className="bg-white rounded border border-gray-300 px-2 py-1 sm:px-3 sm:py-2 flex items-center justify-center shadow-sm">
+                  <img 
+                    src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" 
+                    alt="PayPal" 
+                    className="h-4 sm:h-5 md:h-6 w-auto"
+                  />
+                </div>
+              </div>
             </div>
           )}
 
+          {/* Description */}
+          <div className="mt-6 sm:mt-8">
+            <h2 className="text-base sm:text-lg font-semibold text-gray-900 mb-2">{t.description}</h2>
+            <div 
+              className="text-sm sm:text-base text-gray-600 leading-relaxed"
+              dangerouslySetInnerHTML={{ __html: localizedProduct.description }}
+            />
+          </div>
+
           {/* Additional Info */}
-          <div className="mt-12 pt-8 border-t border-gray-200">
-            <div className="space-y-4">
+          <div className="mt-8 sm:mt-12 pt-6 sm:pt-8 border-t border-gray-200">
+            <div className="space-y-3 sm:space-y-4">
               <div className="flex items-start">
-                <svg className="h-6 w-6 text-gray-400 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400 mr-2 sm:mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-900">{t.freeShipping}</h3>
-                  <p className="text-sm text-gray-600">{t.freeShippingDesc}</p>
+                  <h3 className="font-semibold text-gray-900 text-sm sm:text-base">{t.freeShipping}</h3>
+                  <p className="text-xs sm:text-sm text-gray-600">{t.freeShippingDesc}</p>
                 </div>
               </div>
               <div className="flex items-start">
-                <svg className="h-6 w-6 text-gray-400 mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="h-5 w-5 sm:h-6 sm:w-6 text-gray-400 mr-2 sm:mr-3 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
                 <div>
-                  <h3 className="font-semibold text-gray-900">{t.qualityGuarantee}</h3>
-                  <p className="text-sm text-gray-600">{t.qualityGuaranteeDesc}</p>
+                  <h3 className="font-semibold text-gray-900 text-sm sm:text-base">{t.qualityGuarantee}</h3>
+                  <p className="text-xs sm:text-sm text-gray-600">{t.qualityGuaranteeDesc}</p>
                 </div>
               </div>
             </div>
@@ -205,12 +247,12 @@ export default function ProductDetailPage() {
       </div>
 
       {/* Customer Reviews Section */}
-      <div className="mt-20">
-        <div className="mb-10">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-2">
+      <div className="mt-12 sm:mt-16 md:mt-20">
+        <div className="mb-6 sm:mb-8 md:mb-10">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-2">
             {language === 'en' ? 'Customer Reviews' : 'Avis Clients'}
           </h2>
-          <p className="text-gray-600">
+          <p className="text-sm sm:text-base text-gray-600">
             {language === 'en' ? 'See what our customers are saying' : 'Découvrez ce que disent nos clients'}
           </p>
         </div>

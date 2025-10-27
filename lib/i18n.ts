@@ -9,6 +9,9 @@ export const translations = {
     about: 'About',
     contact: 'Contact',
     
+    // Top Banner
+    bannerText: '🎉 Spend $89 more to enjoy FREE SHIPPING! | Spend $69 more to enjoy $10 OFF',
+    
     // Home Page
     heroTitle: 'Discover Your Style',
     heroSubtitle: 'Premium quality products for the modern lifestyle. Simple, elegant, and timeless.',
@@ -146,6 +149,9 @@ export const translations = {
     cart: 'Panier',
     about: 'À Propos',
     contact: 'Contact',
+    
+    // Top Banner
+    bannerText: '🎉 Dépensez 89 $ de plus pour profiter de la livraison gratuite ! | Dépensez 69 $ de plus pour profiter de 10 $ de réduction | CODE : WELCOME10',
     
     // Home Page
     heroTitle: 'Découvrez Votre Style',

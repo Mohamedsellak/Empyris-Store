@@ -26,39 +26,23 @@ export default function ProductCard({ product }: ProductCardProps) {
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
           />
           {!product.inStock && (
-            <div className="absolute bottom-3 left-3 bg-gray-800 text-white px-3 py-1.5 rounded text-xs font-medium border-2 border-white">
+            <div className="absolute bottom-2 left-2 bg-gray-800 text-white px-2 py-1 rounded text-xs font-medium border border-white">
               {language === 'en' ? 'Out of Stock' : 'Rupture de Stock'}
             </div>
           )}
         </div>
       </Link>
       
-      <div className="p-4">
+      <div className="p-2">
         <Link href={`/products/${product.id}`}>
-          <h3 className="text-lg font-semibold text-gray-900 mb-1 group-hover:text-gray-700 transition-colors line-clamp-1">
+          <h3 className="text-sm font-semibold text-gray-900 mb-1 group-hover:text-gray-700 transition-colors line-clamp-2">
             {localizedProduct.name}
           </h3>
         </Link>
         
-        <p className="text-sm text-gray-500 mb-3">{localizedProduct.category}</p>
-        
-        <div className="flex items-center justify-between">
-          <span className="text-xl font-bold text-gray-900">
-            ${product.price.toFixed(2)}
-          </span>
-        </div>
-        
-        {product.inStock && (
-          <AddToCartButton
-            product={{
-              id: product.id,
-              name: localizedProduct.name,
-              price: product.price,
-              image: product.image,
-            }}
-            className="mt-4 w-full"
-          />
-        )}
+        <span className="text-base font-bold text-gray-900">
+          ${product.price.toFixed(2)}
+        </span>
       </div>
     </div>
   );
