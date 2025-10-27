@@ -3,7 +3,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { Product, getLocalizedProduct } from '@/lib/products';
-import AddToCartButton from '@/components/AddToCartButton';
 import { useLanguage } from '@/context/LanguageContext';
 
 interface ProductCardProps {

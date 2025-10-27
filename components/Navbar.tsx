@@ -19,7 +19,12 @@ export default function Navbar() {
   // Close dropdown when clicking outside
   useEffect(() => {
     function handleClickOutside(event: MouseEvent) {
-      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+      const target = event.target as Node;
+      // Check if click is outside all dropdown elements
+      const isOutsideDesktopDropdown = dropdownRef.current && !dropdownRef.current.contains(target);
+      const isOutsideMobileDropdown = !(target as HTMLElement).closest('.mobile-language-dropdown');
+      
+      if (isOutsideDesktopDropdown && isOutsideMobileDropdown) {
         setLanguageDropdownOpen(false);
       }
     }
@@ -53,7 +58,7 @@ export default function Navbar() {
           </div>
 
           {/* Center: Logo */}
-          <div className="flex-1 flex justify-center md:flex-initial">
+          <div className="flex-1 flex justify-start md:justify-center md:flex-initial">
             <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
               <Image 
                 src="/assets/images/logo.png" 
@@ -125,9 +130,12 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center space-x-4">
             {/* Mobile Language Dropdown */}
-            <div className="relative">
+            <div className="relative mobile-language-dropdown">
               <button
-                onClick={() => setLanguageDropdownOpen(!languageDropdownOpen)}
+                onClick={(e) => {
+                  e.stopPropagation();
+                  setLanguageDropdownOpen(!languageDropdownOpen);
+                }}
                 className="flex items-center space-x-1 text-gray-700 hover:text-gray-900 px-2 py-1 rounded hover:bg-gray-100 transition-colors"
               >
                 <span className="text-sm font-medium">{language.toUpperCase()}</span>
@@ -136,9 +144,10 @@ export default function Navbar() {
               
               {/* Mobile Dropdown Menu */}
               {languageDropdownOpen && (
-                <div className="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-md shadow-lg py-1 z-50">
+                <div className="absolute right-0 mt-2 w-32 bg-white border border-gray-200 rounded-md shadow-lg py-1 z-[60]">
                   <button
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.stopPropagation();
                       setLanguage('en');
                       setLanguageDropdownOpen(false);
                     }}
@@ -151,7 +160,8 @@ export default function Navbar() {
                     EN
                   </button>
                   <button
-                    onClick={() => {
+                    onClick={(e) => {
+                      e.stopPropagation();
                       setLanguage('fr');
                       setLanguageDropdownOpen(false);
                     }}
