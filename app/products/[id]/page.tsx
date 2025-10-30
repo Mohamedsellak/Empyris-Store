@@ -177,6 +177,21 @@ export default function ProductDetailPage() {
                   target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 bg-orange-500 text-white px-4 py-2.5 sm:px-8 sm:py-4 text-center font-semibold hover:bg-orange-600 transition-all duration-200 rounded-md text-sm sm:text-base"
+                  onClick={() => {
+                    // Track Buy Now event with TikTok Pixel
+                    if (typeof window !== 'undefined' && 'ttq' in window) {
+                      const ttq = (window as Window & { ttq?: { track: (event: string, data: Record<string, string | number>) => void } }).ttq;
+                      ttq?.track('ClickButton', {
+                        content_id: product.id.toString(),
+                        content_name: localizedProduct.name,
+                        content_type: 'product',
+                        quantity: quantity,
+                        price: product.price,
+                        value: product.price * quantity,
+                        currency: 'USD'
+                      });
+                    }
+                  }}
                 >
                   {t.buyNow}
                 </a>
