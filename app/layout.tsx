@@ -49,7 +49,7 @@ export default function RootLayout({
               ttq.page();
               }(window, document, 'ttq');
             `,
-          }}
+          }} 
         />
 
         <LanguageProvider>

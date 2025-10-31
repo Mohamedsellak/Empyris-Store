@@ -90,6 +90,25 @@ export const products: Product[] = [
     inStock: true,
     buyNowLink: "https://example.com/buy-astronaut-projector"
   },
+  {
+    id: 5,
+    name: "Minecraft Lantern",
+    nameFr: "Lanterne Minecraft",
+    price: 9.99,
+    image: "/assets/images/products/5/1.png",
+    images: [
+      "/assets/images/products/5/1.png",
+      "/assets/images/products/5/2.png",
+      "/assets/images/products/5/3.png",
+      "/assets/images/products/5/4.png"
+    ],
+    description: `Relive your childhood adventures with this authentic Minecraft Lantern. Perfect for gamers and fans of all ages.<br /><br />• USB Rechargeable - No batteries needed<br />• Bright light with vivid colors<br />• Sturdy and durable construction<br />• Perfect for decoration and practical use<br />• 30-Day Return Guarantee<br />• Fast & Secure Shipping<br /><br />⭐ 4.9/5 from 3000+ customers<br /><br />💬 Customer Reviews:<br />"Amazing quality and faster shipping than expected!" - Michael T., USA<br />"Super sturdy, bright light, my kids love it!" - Aleksandra W., Poland<br />"Useful and decorative, everyone in my house uses it!" - Javier L., Spain`,
+    descriptionFr: `Revivez vos aventures d'enfance avec cette authentique Lanterne Minecraft. Parfaite pour joueurs et fans de tous âges.<br /><br />• Rechargeable USB - Pas de piles nécessaires<br />• Lumière vive avec couleurs éclatantes<br />• Construction robuste et durable<br />• Parfaite pour décoration et usage pratique<br />• Garantie retour 30 jours<br />• Expédition rapide et sécurisée<br /><br />⭐ 4,9/5 par 3000+ clients<br /><br />💬 Avis Clients:<br />"Qualité incroyable et expédition plus rapide que prévu!" - Michael T., USA<br />"Super robuste, lumière vive, mes enfants adorent!" - Aleksandra W., Pologne<br />"Utile et décorative, toute ma famille l'utilise!" - Javier L., Espagne`,
+    category: "Lighting",
+    featured: true,
+    inStock: true,
+    buyNowLink: "https://example.com/buy-minecraft-lantern"
+  },
 ];
 
 export function getProductById(id: number): Product | undefined {
