@@ -16,7 +16,7 @@ export const translations = {
     heroTitle: 'Discover Your Style',
     heroSubtitle: 'Premium quality products for the modern lifestyle. Simple, elegant, and timeless.',
     shopNow: 'Shop Now',
-    featuredProducts: 'Featured Products',
+    featuredProducts: 'Trending Now',
     featuredSubtitle: 'Handpicked favorites to elevate your everyday',
     viewAllProducts: 'View All Products',
     
@@ -157,7 +157,7 @@ export const translations = {
     heroTitle: 'Découvrez Votre Style',
     heroSubtitle: 'Des produits de qualité supérieure pour un style de vie moderne. Simple, élégant et intemporel.',
     shopNow: 'Acheter Maintenant',
-    featuredProducts: 'Produits Vedettes',
+    featuredProducts: 'Tendances Actuelles',
     featuredSubtitle: 'Nos favoris triés sur le volet pour rehausser votre quotidien',
     viewAllProducts: 'Voir Tous les Produits',
     

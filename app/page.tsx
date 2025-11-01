@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { getFeaturedProducts } from '@/lib/products';
 import ProductCard from '@/components/ProductCard';
 import BrandScroll from '@/components/BrandScroll';
+import HeroCarousel from '@/components/HeroCarousel';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/lib/i18n';
 
@@ -15,110 +16,14 @@ export default function Home() {
 
   return (
     <div>
-      {/* Hero Section */}
-      <section className="bg-white py-16 md:py-24 relative overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
-            {/* Left Content */}
-            <div className="text-center md:text-left">
-              {/* Urgency Badge */}
-              <div className="inline-flex items-center gap-2 bg-red-50 text-red-700 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-                  <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clipRule="evenodd" />
-                </svg>
-                {language === 'en' ? '🔥 Limited Stock - Order Today!' : '🔥 Stock Limité - Commandez Aujourd\'hui !'}
-              </div>
-              
-              <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-gray-900 mb-4 md:mb-6 leading-tight">
-                {language === 'en' ? 'Premium Home Decor Delivered to Your Door' : 'Décoration Premium Livrée à Votre Porte'}
-              </h1>
-              <p className="text-base sm:text-lg text-gray-600 mb-6 md:mb-8 max-w-xl mx-auto md:mx-0">
-                {language === 'en' 
-                  ? 'Transform your space with unique, high-quality pieces. Free shipping on orders over $50.' 
-                  : 'Transformez votre espace avec des pièces uniques et de haute qualité. Livraison gratuite pour les commandes de plus de 50 $.'}
-              </p>
-              
-              {/* Social Proof with Real Client Images */}
-              <div className="flex items-center justify-center md:justify-start gap-2 mb-6">
-                <div className="flex -space-x-2">
-                  <Image 
-                    src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100&h=100&fit=crop&crop=faces" 
-                    alt="Client 1" 
-                    width={32} 
-                    height={32} 
-                    className="w-8 h-8 rounded-full border-2 border-white object-cover"
-                  />
-                  <Image 
-                    src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop&crop=faces" 
-                    alt="Client 2" 
-                    width={32} 
-                    height={32} 
-                    className="w-8 h-8 rounded-full border-2 border-white object-cover"
-                  />
-                  <Image 
-                    src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100&h=100&fit=crop&crop=faces" 
-                    alt="Client 3" 
-                    width={32} 
-                    height={32} 
-                    className="w-8 h-8 rounded-full border-2 border-white object-cover"
-                  />
-                  <Image 
-                    src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100&h=100&fit=crop&crop=faces" 
-                    alt="Client 4" 
-                    width={32} 
-                    height={32} 
-                    className="w-8 h-8 rounded-full border-2 border-white object-cover"
-                  />
-                </div>
-                <div className="text-sm text-gray-700">
-                  <span className="font-bold">10,000+</span> {language === 'en' ? 'Happy Customers' : 'Clients Satisfaits'}
-                </div>
-              </div>
-              
-              <Link
-                href="/products"
-                className="inline-block bg-black text-white px-6 sm:px-8 py-3 sm:py-4 rounded-md text-sm sm:text-base font-medium hover:bg-gray-800 transition-colors shadow-lg hover:shadow-xl"
-              >
-                {t.shopNow}
-              </Link>
-              
-              {/* Trust Badges */}
-              <div className="flex items-center justify-center md:justify-start gap-4 mt-6 flex-wrap">
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                  </svg>
-                  <span className="font-medium">{language === 'en' ? 'Secure Checkout' : 'Paiement Sécurisé'}</span>
-                </div>
-                <div className="flex items-center gap-2 text-sm text-gray-600">
-                  <svg className="w-6 h-6 text-blue-600" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
-                  </svg>
-                  <span className="font-medium">{language === 'en' ? '30-Day Returns' : 'Retours 30 Jours'}</span>
-                </div>
-              </div>
-            </div>
-            
-            {/* Right Image */}
-            <div className="relative h-[300px] sm:h-[400px] md:h-[500px] animate-[float_3s_ease-in-out_infinite] order-first md:order-last">
-              <Image
-                src="/assets/images/hero.png"
-                alt="Hero Image"
-                fill
-                className="object-contain drop-shadow-2xl"
-                sizes="(max-width: 768px) 100vw, 50vw"
-                priority
-              />
-            </div>
-          </div>
-        </div>
-      </section>
+      {/* Hero Carousel Section */}
+      <HeroCarousel />
 
 {/* Featured Products Section */}
-      <section className="py-16 md:py-24">
+      <section className="py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+          <div className="text-center mb-8">
+            <h2 className="text-3xl md:text-4xl font-bold text-red-600 mb-2 uppercase">
               {t.featuredProducts}
             </h2>
             <p className="text-lg text-gray-600">
@@ -126,13 +31,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8">
-            {featuredProducts.map((product) => (
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            {[...featuredProducts].reverse().slice(0, 4).map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
 
-          <div className="text-center mt-12">
+          <div className="text-center mt-8">
             <Link
               href="/products"
               className="inline-block border-2 border-black text-black px-8 py-3 rounded-md font-medium hover:bg-black hover:text-white transition-colors duration-100"
@@ -143,10 +48,68 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Customer Testimonials */}
-      <section className="py-16 md:py-20 bg-white">
+      {/* section */}
+      <section 
+        className="relative w-full overflow-hidden mt-4 px-4 sm:px-6 lg:px-8"
+        role="region"
+        aria-roledescription="Carousel"
+        aria-label="Hero Carousel"
+      >
+        <div className="max-w-7xl mx-auto rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden">
+          <Image
+            src={"/assets/images/christmas.png"}
+            alt="New Arrival"
+            width={2000}
+            height={500}
+            className="w-full h-auto object-cover"
+            priority
+          />
+        </div>
+      </section>
+
+      {/* Featured Products Section */}
+      <section className="py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
+          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
+            {[...featuredProducts].reverse().slice(0, 4).map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))}
+          </div>
+
+          <div className="text-center mt-8">
+            <Link
+              href="/products"
+              className="inline-block border-2 border-black text-black px-8 py-3 rounded-md font-medium hover:bg-black hover:text-white transition-colors duration-100"
+            >
+              {t.viewAllProducts}
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* section */}
+      <section 
+        className="relative w-full overflow-hidden mt-4 px-4 sm:px-6 lg:px-8"
+        role="region"
+        aria-roledescription="Carousel"
+        aria-label="Hero Carousel"
+      >
+        <div className="max-w-7xl mx-auto rounded-lg md:rounded-xl lg:rounded-2xl overflow-hidden">
+          <Image
+            src={"/assets/images/new-arrival.png"}
+            alt="New Arrival"
+            width={2000}
+            height={500}
+            className="w-full h-auto object-cover"
+            priority
+          />
+        </div>
+      </section>
+
+      {/* Customer Testimonials */}
+      <section className="py-8 md:py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-3">
               {language === 'en' ? 'What Our Customers Say' : 'Ce Que Disent Nos Clients'}
             </h2>
@@ -255,9 +218,9 @@ export default function Home() {
       <BrandScroll />
 
       {/* Features Section */}
-      <section className="bg-white py-16 border-t border-gray-100">
+      <section className="bg-white py-8 md:py-10 border-t border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-3 gap-6">
             <div className="text-center">
               <div className="w-16 h-16 bg-black text-white rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -290,12 +253,12 @@ export default function Home() {
       </section>
 
       {/* Newsletter Section */}
-      <section className="bg-gradient-to-r from-gray-900 to-gray-800 py-16">
+      <section className="bg-gradient-to-r from-gray-900 to-gray-800 py-10 md:py-12">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-3">
             {language === 'en' ? 'Get 10% Off Your First Order!' : 'Obtenez 10 % de Réduction sur Votre Première Commande !'}
           </h2>
-          <p className="text-lg text-gray-300 mb-8">
+          <p className="text-lg text-gray-300 mb-6">
             {language === 'en' 
               ? 'Subscribe to our newsletter for exclusive deals, new arrivals, and decor inspiration.' 
               : 'Abonnez-vous à notre newsletter pour des offres exclusives, de nouvelles arrivées et de l\'inspiration déco.'}
