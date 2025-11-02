@@ -5,8 +5,7 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { getProductById, getLocalizedProduct } from '@/lib/products';
 import { useParams } from 'next/navigation';
-import AddToCartButton from '@/components/AddToCartButton';
-import { ChevronLeft, Minus, Plus, Star } from 'lucide-react';
+import { ChevronLeft, Star } from 'lucide-react';
 import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/lib/i18n';
 
@@ -14,8 +13,8 @@ export default function ProductDetailPage() {
   const params = useParams();
   const productId = parseInt(params.id as string);
   const product = getProductById(productId);
-  const [quantity, setQuantity] = useState(1);
   const [selectedImage, setSelectedImage] = useState(0);
+  const [selectedColor, setSelectedColor] = useState<string | null>(null);
   const { language } = useLanguage();
   const t = translations[language];
 
@@ -36,61 +35,64 @@ export default function ProductDetailPage() {
   // Use gallery images if available, otherwise fallback to main image
   const galleryImages = product.images || [product.image];
 
-  const handleIncrement = () => {
-    setQuantity(prev => prev + 1);
-  };
-
-  const handleDecrement = () => {
-    if (quantity > 1) {
-      setQuantity(prev => prev - 1);
-    }
-  };
-
   return (
-    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-4 sm:py-12">
+    <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8 py-2 sm:py-8">
       <Link
         href="/products"
-        className="hidden sm:inline-flex items-center text-gray-600 hover:text-gray-900 mb-4 sm:mb-8 transition-colors"
+        className="hidden sm:inline-flex items-center text-gray-600 hover:text-gray-900 mb-3 sm:mb-6 transition-colors"
       >
         <ChevronLeft className="h-5 w-5" />
         <span>{t.backToProducts}</span>
       </Link>
 
-      <div className="grid md:grid-cols-2 gap-4 sm:gap-12">
+      <div className="grid md:grid-cols-2 gap-4 sm:gap-8 md:gap-12">
         {/* Product Image Gallery */}
-        <div>
+        <div className="w-full overflow-hidden">
           {/* Main Image */}
-          <div className="relative aspect-square rounded-lg overflow-hidden bg-gray-100 shadow-lg mb-2 sm:mb-4">
+          <div className="relative w-full aspect-square rounded-lg overflow-hidden bg-gray-100 shadow-lg mb-2 sm:mb-4">
             <Image
               src={galleryImages[selectedImage]}
               alt={localizedProduct.name}
               fill
-              className="object-cover"
+              className="object-contain"
               priority
             />
           </div>
 
-          {/* Thumbnail Gallery */}
+          {/* Thumbnail Gallery - Horizontal Scroll */}
           {galleryImages.length > 1 && (
-            <div className="grid grid-cols-4 gap-2 sm:gap-4">
-              {galleryImages.map((image, index) => (
-                <button
-                  key={index}
-                  onClick={() => setSelectedImage(index)}
-                  className={`relative aspect-square rounded-lg overflow-hidden bg-gray-100 border-2 transition-all ${
-                    selectedImage === index
-                      ? 'border-black shadow-md'
-                      : 'border-gray-200 hover:border-gray-400'
-                  }`}
-                >
-                  <Image
-                    src={image}
-                    alt={`${localizedProduct.name} - Image ${index + 1}`}
-                    fill
-                    className="object-cover"
-                  />
-                </button>
-              ))}
+            <div className="relative">
+              <div className="w-full overflow-x-auto pb-2 scrollbar-hide scroll-smooth">
+                <div className="flex gap-2 sm:gap-3 snap-x snap-mandatory">
+                  {galleryImages.map((image, index) => (
+                    <button
+                      key={index}
+                      onClick={() => setSelectedImage(index)}
+                      className={`relative flex-shrink-0 w-20 h-20 sm:w-24 sm:h-24 md:w-28 md:h-28 rounded-lg overflow-hidden bg-gray-100 border transition-all snap-start ${
+                        selectedImage === index
+                          ? 'border-black shadow-md border-2'
+                          : 'border-gray-200 hover:border-gray-400'
+                      }`}
+                    >
+                      <Image
+                        src={image}
+                        alt={`${localizedProduct.name} - Image ${index + 1}`}
+                        fill
+                        className="object-contain"
+                        sizes="(max-width: 640px) 80px, (max-width: 768px) 96px, 112px"
+                      />
+                    </button>
+                  ))}
+                </div>
+              </div>
+              {/* Scroll Indicator */}
+              {galleryImages.length > 4 && (
+                <div className="absolute right-0 top-0 bottom-0 w-8 pointer-events-none flex items-center justify-end pr-1">
+                  <svg className="w-6 h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                  </svg>
+                </div>
+              )}
             </div>
           )}
         </div>
@@ -117,42 +119,52 @@ export default function ProductDetailPage() {
             </div>
           </div>
 
-          {/* Out of Stock Alert or Quantity Selector */}
-          {!product.inStock ? (
-            <div className="mb-3 sm:mb-6 bg-red-50 border border-red-200 text-red-800 px-3 py-2 sm:px-6 sm:py-4 rounded-lg text-center font-medium text-sm sm:text-base">
-              {language === 'en' ? 'Out of Stock' : 'Rupture de Stock'}
-            </div>
-          ) : (
+          {/* Available Colors - Only show if product has colors AND is in stock */}
+          {product.inStock && product.colors && product.colors.length > 0 && (
             <div className="mb-4 sm:mb-6">
               <label className="block text-sm sm:text-base font-semibold text-gray-900 mb-2 sm:mb-3">
-                {t.quantity}
+                {language === 'en' ? 'Available Colors' : 'Couleurs Disponibles'}
               </label>
-              <div className="flex items-center space-x-2 sm:space-x-4">
-                <div className="flex items-center border-2 border-gray-300 rounded-lg shadow-sm">
+              <div className="flex flex-wrap gap-3">
+                {product.colors.map((color, index) => (
                   <button
-                    onClick={handleDecrement}
-                    className="p-2 sm:p-3 hover:bg-gray-100 transition-colors rounded-l-lg"
-                    aria-label={t.decreaseQty}
+                    key={index}
+                    onClick={() => setSelectedColor(color)}
+                    className={`relative w-10 h-10 sm:w-12 sm:h-12 rounded-full border-2 transition-all ${
+                      selectedColor === color
+                        ? 'border-black ring-2 ring-offset-2 ring-black'
+                        : 'border-gray-300 hover:border-gray-500'
+                    }`}
+                    style={{ backgroundColor: color }}
+                    aria-label={`Select color ${color}`}
                   >
-                    <Minus className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
+                    {selectedColor === color && (
+                      <svg
+                        className="absolute inset-0 m-auto w-5 h-5 sm:w-6 sm:h-6 text-white drop-shadow-lg"
+                        fill="currentColor"
+                        viewBox="0 0 20 20"
+                      >
+                        <path
+                          fillRule="evenodd"
+                          d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                          clipRule="evenodd"
+                        />
+                      </svg>
+                    )}
+                    {/* Add a white border for light colors to make them visible */}
+                    {color === '#FFFFFF' && (
+                      <div className="absolute inset-0 rounded-full border border-gray-300"></div>
+                    )}
                   </button>
-                  <span className="px-4 py-2 sm:px-6 sm:py-3 font-bold text-gray-900 min-w-[50px] sm:min-w-[70px] text-center text-base sm:text-lg bg-gray-50">
-                    {quantity}
-                  </span>
-                  <button
-                    onClick={handleIncrement}
-                    className="p-2 sm:p-3 hover:bg-gray-100 transition-colors rounded-r-lg"
-                    aria-label={t.increaseQty}
-                  >
-                    <Plus className="h-4 w-4 sm:h-5 sm:w-5 text-gray-700" />
-                  </button>
-                </div>
-                <div className="text-xs sm:text-sm text-gray-600">
-                  <span className="font-semibold text-green-600">✓ {language === 'en' ? 'In Stock' : 'En Stock'}</span>
-                  <br />
-                  <span>{language === 'en' ? 'Ready to ship' : 'Prêt à expédier'}</span>
-                </div>
+                ))}
               </div>
+            </div>
+          )}
+
+          {/* Out of Stock Alert */}
+          {!product.inStock && (
+            <div className="mb-3 sm:mb-6 bg-red-50 border border-red-200 text-red-800 px-3 py-2 sm:px-6 sm:py-4 rounded-lg text-center font-medium text-sm sm:text-base">
+              {language === 'en' ? 'Out of Stock' : 'Rupture de Stock'}
             </div>
           )}
 
@@ -160,7 +172,7 @@ export default function ProductDetailPage() {
           {product.inStock && (
             <div>
               <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-3 sm:mb-6">
-                <AddToCartButton
+                {/* <AddToCartButton
                   product={{
                     id: product.id,
                     name: localizedProduct.name,
@@ -169,12 +181,12 @@ export default function ProductDetailPage() {
                   }}
                   quantity={quantity}
                   className="flex-1 text-sm sm:text-base py-2.5 sm:py-4"
-                />
+                /> */}
                 
                 <a
                   // href={`https://www.nhlv1trk.com/CPLS3PH/764X28J/?sub3=${encodeURIComponent(localizedProduct.name)}&sub4=${encodeURIComponent(`${window.location.origin}${product.image}`)}&sub14=D41JC0BC77U40Q0I64JG`}
                   href={`https://www.nhlv1trk.com/CPLS3PH/8DXR6WQ/?sub3=${encodeURIComponent(localizedProduct.name)}&sub4=${encodeURIComponent(`${window.location.origin}${product.image}`)}&sub14=D41JC0BC77U40Q0I64JG`}
-                  target="_blank"
+                  // target="_blank"
                   rel="noopener noreferrer"
                   className="flex-1 bg-orange-500 text-white px-4 py-2.5 sm:px-8 sm:py-4 text-center font-semibold hover:bg-orange-600 transition-all duration-200 rounded-md text-sm sm:text-base"
                 >
