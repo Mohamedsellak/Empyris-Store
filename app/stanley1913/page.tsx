@@ -42,7 +42,7 @@ interface ProductData {
 }
 
 // Your actual product data
-export const productData: ProductData = {
+const productData: ProductData = {
   sizes: [
     {
       id: "14oz",
@@ -1666,7 +1666,7 @@ export default function StanleyProTourPage() {
                 </div>
                 <h3 className="text-xl font-bold text-gray-900">Flip, Sip, Repeat</h3>
                 <p className="text-gray-600">
-                  Sip with ease, spill-free—our leakproof flip straw lid's got your back!
+                  Sip with ease, spill-free—our leakproof flip straw lid&apos;s got your back!
                 </p>
               </div>
 
