@@ -1,9 +1,8 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useCart } from '@/context/CartContext';
 import { useLanguage } from '@/context/LanguageContext';
 import { 
   ChevronLeft, 
@@ -55,25 +54,131 @@ export const productData: ProductData = {
       dimensions: "4.8 x 3.2 x 6.9 in",
       variants: [
         {
-          colorName: "Ponderosa Shimmer Blue",
+          colorName: "Dew Drop",
           sku: "10-12484-0321",
           images: [
-            "/assets/images/products/1/1.png",
-            "/assets/images/products/1/2.png",
-            "/assets/images/products/1/3.png",
-            "/assets/images/products/1/4.png"
+            "/assets/images/products/stanley1913/14OZ/1/1.png",
+            "/assets/images/products/stanley1913/14OZ/1/2.png",
+            "/assets/images/products/stanley1913/14OZ/1/3.png"
           ]
         },
         {
-          colorName: "Port Shimmer Pink",
+          colorName: "Meadow",
           sku: "10-12484-0322",
           images: [
-            "/assets/images/products/2/1.png",
-            "/assets/images/products/2/2.png",
-            "/assets/images/products/2/3.png",
-            "/assets/images/products/2/4.png"
+            "/assets/images/products/stanley1913/14OZ/2/1.png",
+            "/assets/images/products/stanley1913/14OZ/2/2.png",
+            "/assets/images/products/stanley1913/14OZ/2/3.png",
           ]
-        }
+        },
+        {
+          colorName: "Hot Coral",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/3/1.png",
+            "/assets/images/products/stanley1913/14OZ/3/2.png",
+            "/assets/images/products/stanley1913/14OZ/3/3.png",
+          ]
+        },
+        {
+          colorName: " Seafoam",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/4/1.png",
+            "/assets/images/products/stanley1913/14OZ/4/2.png",
+            "/assets/images/products/stanley1913/14OZ/4/3.png",
+          ]
+        },
+        {
+          colorName: " Cream",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/5/1.png",
+            "/assets/images/products/stanley1913/14OZ/5/2.png",
+            "/assets/images/products/stanley1913/14OZ/5/3.png",
+          ]
+        },
+        {
+          colorName: "Rose Quartz",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/6/1.png",
+            "/assets/images/products/stanley1913/14OZ/6/2.png",
+            "/assets/images/products/stanley1913/14OZ/6/3.png",
+          ]
+        },
+        {
+          colorName: "Black",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/7/1.png",
+            "/assets/images/products/stanley1913/14OZ/7/2.png",
+            "/assets/images/products/stanley1913/14OZ/7/3.png",
+          ]
+        },
+        {
+          colorName: "Ash",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/8/1.png",
+            "/assets/images/products/stanley1913/14OZ/8/2.png",
+            "/assets/images/products/stanley1913/14OZ/8/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/9/1.png",
+            "/assets/images/products/stanley1913/14OZ/9/2.png",
+            "/assets/images/products/stanley1913/14OZ/9/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/10/1.png",
+            "/assets/images/products/stanley1913/14OZ/10/2.png",
+            "/assets/images/products/stanley1913/14OZ/10/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/11/1.png",
+            "/assets/images/products/stanley1913/14OZ/11/2.png",
+            "/assets/images/products/stanley1913/14OZ/11/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/12/1.png",
+            "/assets/images/products/stanley1913/14OZ/12/2.png",
+            "/assets/images/products/stanley1913/14OZ/12/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/13/1.png",
+            "/assets/images/products/stanley1913/14OZ/13/2.png",
+            "/assets/images/products/stanley1913/14OZ/13/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0322",
+          images: [
+            "/assets/images/products/stanley1913/14OZ/14/1.png",
+            "/assets/images/products/stanley1913/14OZ/14/2.png",
+            "/assets/images/products/stanley1913/14OZ/14/3.png",
+          ]
+        },
       ]
     },
     {
@@ -86,134 +191,138 @@ export const productData: ProductData = {
       dimensions: "5.27 x 3.54 x 7.55 in",
       variants: [
         {
-          colorName: "Juniper Green",
+          colorName: "Charcoal",
           sku: "10-12484-0401",
           images: [
-            "/assets/images/products/3/1.png",
-            "/assets/images/products/3/2.png",
-            "/assets/images/products/3/3.png",
-            "/assets/images/products/3/4.png"
+            "/assets/images/products/stanley1913/20OZ/1/1.png",
+            "/assets/images/products/stanley1913/20OZ/1/2.png",
+            "/assets/images/products/stanley1913/20OZ/1/3.png"
           ]
         },
         {
-          colorName: "Cherry Blossom Pink",
+          colorName: "Cream",
           sku: "10-12484-0402",
           images: [
-            "/assets/images/products/1/1.png",
-            "/assets/images/products/1/2.png",
-            "/assets/images/products/1/3.png",
-            "/assets/images/products/1/4.png"
+            "/assets/images/products/stanley1913/20OZ/2/1.png",
+            "/assets/images/products/stanley1913/20OZ/2/2.png",
+            "/assets/images/products/stanley1913/20OZ/2/3.png"
           ]
         },
         {
-          colorName: "Hydrangea Purple",
+          colorName: "Tigerlily",
           sku: "10-12484-0403",
           images: [
-            "/assets/images/products/4/1.png",
-            "/assets/images/products/4/2.png",
-            "/assets/images/products/4/3.png",
-            "/assets/images/products/4/4.png"
+            "/assets/images/products/stanley1913/20OZ/3/1.png",
+            "/assets/images/products/stanley1913/20OZ/3/2.png",
+            "/assets/images/products/stanley1913/20OZ/3/3.png"
           ]
         },
         {
-          colorName: "Rose Quartz Fade",
+          colorName: "Rose Quartz",
           sku: "10-12484-0404",
           images: [
-            "/assets/images/products/2/1.png",
-            "/assets/images/products/2/2.png",
-            "/assets/images/products/2/3.png",
-            "/assets/images/products/2/4.png"
-          ],
-          inStock: false
+            "/assets/images/products/stanley1913/20OZ/4/1.png",
+            "/assets/images/products/stanley1913/20OZ/4/2.png",
+            "/assets/images/products/stanley1913/20OZ/4/3.png"
+          ]
         },
         {
-          colorName: "Frost Fade",
+          colorName: "Pool",
           sku: "10-12484-0405",
           images: [
-            "/assets/images/products/3/1.png",
-            "/assets/images/products/3/2.png",
-            "/assets/images/products/3/3.png",
-            "/assets/images/products/3/4.png"
+            "/assets/images/products/stanley1913/20OZ/5/1.png",
+            "/assets/images/products/stanley1913/20OZ/5/2.png",
+            "/assets/images/products/stanley1913/20OZ/5/3.png"
           ]
         },
         {
-          colorName: "Azure Blue Fade",
+          colorName: "Shale",
           sku: "10-12484-0406",
           images: [
-            "/assets/images/products/1/1.png",
-            "/assets/images/products/1/2.png",
-            "/assets/images/products/1/3.png",
-            "/assets/images/products/1/4.png"
+            "/assets/images/products/stanley1913/20OZ/6/1.png",
+            "/assets/images/products/stanley1913/20OZ/6/2.png",
+            "/assets/images/products/stanley1913/20OZ/6/3.png"
           ]
         },
         {
-          colorName: "Black Fade",
+          colorName: "Citron",
           sku: "10-12484-0407",
           images: [
-            "/assets/images/products/4/1.png",
-            "/assets/images/products/4/2.png",
-            "/assets/images/products/4/3.png",
-            "/assets/images/products/4/4.png"
+            "/assets/images/products/stanley1913/20OZ/7/1.png",
+            "/assets/images/products/stanley1913/20OZ/7/2.png",
+            "/assets/images/products/stanley1913/20OZ/7/3.png"
           ]
         },
         {
-          colorName: "Hot Coral Red",
+          colorName: "Lapis",
           sku: "10-12484-0408",
           images: [
-            "/assets/images/products/2/1.png",
-            "/assets/images/products/2/2.png",
-            "/assets/images/products/2/3.png",
-            "/assets/images/products/2/4.png"
+            "/assets/images/products/stanley1913/20OZ/8/1.png",
+            "/assets/images/products/stanley1913/20OZ/8/2.png",
+            "/assets/images/products/stanley1913/20OZ/8/3.png"
           ]
         },
         {
-          colorName: "Pomelo Yellow",
+          colorName: "Fog",
           sku: "10-12484-0409",
           images: [
-            "/assets/images/products/3/1.png",
-            "/assets/images/products/3/2.png",
-            "/assets/images/products/3/3.png",
-            "/assets/images/products/3/4.png"
+            "/assets/images/products/stanley1913/20OZ/9/1.png",
+            "/assets/images/products/stanley1913/20OZ/9/2.png",
+            "/assets/images/products/stanley1913/20OZ/9/3.png"
           ]
         },
         {
-          colorName: "Ash Grey",
+          colorName: "Iris",
           sku: "10-12484-0410",
           images: [
-            "/assets/images/products/1/1.png",
-            "/assets/images/products/1/2.png",
-            "/assets/images/products/1/3.png",
-            "/assets/images/products/1/4.png"
+            "/assets/images/products/stanley1913/20OZ/10/1.png",
+            "/assets/images/products/stanley1913/20OZ/10/2.png",
+            "/assets/images/products/stanley1913/20OZ/10/3.png"
           ]
         },
         {
-          colorName: "Vivid Violet Pink",
+          colorName: "Alpine",
           sku: "10-12484-0411",
           images: [
-            "/assets/images/products/4/1.png",
-            "/assets/images/products/4/2.png",
-            "/assets/images/products/4/3.png",
-            "/assets/images/products/4/4.png"
+            "/assets/images/products/stanley1913/20OZ/11/1.png",
+            "/assets/images/products/stanley1913/20OZ/11/2.png",
+            "/assets/images/products/stanley1913/20OZ/11/3.png"
           ]
         },
         {
-          colorName: "Mocha Latte Brown",
+          colorName: "Dusk",
           sku: "10-12484-0412",
           images: [
-            "/assets/images/products/2/1.png",
-            "/assets/images/products/2/2.png",
-            "/assets/images/products/2/3.png",
-            "/assets/images/products/2/4.png"
+            "/assets/images/products/stanley1913/20OZ/12/1.png",
+            "/assets/images/products/stanley1913/20OZ/12/2.png",
+            "/assets/images/products/stanley1913/20OZ/12/3.png"
           ]
         },
         {
-          colorName: "Goldenrod Orange",
+          colorName: "Clover",
           sku: "10-12484-0413",
           images: [
-            "/assets/images/products/3/1.png",
-            "/assets/images/products/3/2.png",
-            "/assets/images/products/3/3.png",
-            "/assets/images/products/3/4.png"
+            "/assets/images/products/stanley1913/20OZ/13/1.png",
+            "/assets/images/products/stanley1913/20OZ/13/2.png",
+            "/assets/images/products/stanley1913/20OZ/13/3.png"
+          ]
+        },
+        {
+          colorName: "Ash",
+          sku: "10-12484-0414",
+          images: [
+            "/assets/images/products/stanley1913/20OZ/14/1.png",
+            "/assets/images/products/stanley1913/20OZ/14/2.png",
+            "/assets/images/products/stanley1913/20OZ/14/3.png"
+          ]
+        },
+        {
+          colorName: "Black",
+          sku: "10-12484-0415",
+          images: [
+            "/assets/images/products/stanley1913/20OZ/15/1.png",
+            "/assets/images/products/stanley1913/20OZ/15/2.png",
+            "/assets/images/products/stanley1913/20OZ/15/3.png"
           ]
         }
       ]
@@ -267,6 +376,62 @@ export const productData: ProductData = {
             "/assets/images/products/2/3.png",
             "/assets/images/products/2/4.png",
             "/assets/images/products/2/5.png"
+          ]
+        }
+      ]
+    },
+    {
+      id: "64oz",
+      name: "The Quencher ProTour Flip Straw Tumbler | 64 OZ",
+      description:
+        "Maximum hydration for the longest adventures. Perfect for all-day trips, workouts, or sharing with friends.",
+      price: 50.0,
+      weight: "1.5 lbs",
+      dimensions: "7.5 x 4.8 x 10.5 in",
+      variants: [
+        {
+          colorName: "Charcoal",
+          sku: "10-12484-0701",
+          images: [
+            "/assets/images/products/stanley1913/64OZ/1/1.png",
+            "/assets/images/products/stanley1913/64OZ/1/2.png",
+            "/assets/images/products/stanley1913/64OZ/1/3.png"
+          ]
+        },
+        {
+          colorName: "Cream",
+          sku: "10-12484-0702",
+          images: [
+            "/assets/images/products/stanley1913/64OZ/2/1.png",
+            "/assets/images/products/stanley1913/64OZ/2/2.png",
+            "/assets/images/products/stanley1913/64OZ/2/3.png"
+          ]
+        },
+        {
+          colorName: "Rose Quartz",
+          sku: "10-12484-0703",
+          images: [
+            "/assets/images/products/stanley1913/64OZ/3/1.png",
+            "/assets/images/products/stanley1913/64OZ/3/2.png",
+            "/assets/images/products/stanley1913/64OZ/3/3.png"
+          ]
+        },
+        {
+          colorName: "Pool",
+          sku: "10-12484-0704",
+          images: [
+            "/assets/images/products/stanley1913/64OZ/4/1.png",
+            "/assets/images/products/stanley1913/64OZ/4/2.png",
+            "/assets/images/products/stanley1913/64OZ/4/3.png"
+          ]
+        },
+        {
+          colorName: "Black",
+          sku: "10-12484-0705",
+          images: [
+            "/assets/images/products/stanley1913/64OZ/5/1.png",
+            "/assets/images/products/stanley1913/64OZ/5/2.png",
+            "/assets/images/products/stanley1913/64OZ/5/3.png"
           ]
         }
       ]
@@ -348,7 +513,6 @@ const RELATED_PRODUCTS = [
 // MAIN COMPONENT
 // ============================================
 export default function StanleyProTourPage() {
-  const { addToCart } = useCart();
   const { language } = useLanguage();
   const isEn = language === 'en';
 
@@ -356,9 +520,7 @@ export default function StanleyProTourPage() {
   const [selectedSizeIndex, setSelectedSizeIndex] = useState(1);
   const [selectedVariantIndex, setSelectedVariantIndex] = useState(0);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [quantity, setQuantity] = useState(1);
   const [filterRating, setFilterRating] = useState<number | null>(null);
-  const [addedToCart, setAddedToCart] = useState(false);
   const [imageTransition, setImageTransition] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
@@ -425,21 +587,6 @@ export default function StanleyProTourPage() {
       handleNextImage();
     } else if (isRightSwipe) {
       handlePrevImage();
-    }
-  };
-
-  // Add to cart handler
-  const handleAddToCart = () => {
-    if (isInStock) {
-      addToCart({
-        id: parseInt(selectedVariant.sku.replace(/\D/g, '') || '1'),
-        name: `${selectedSizeData.name} - ${selectedVariant.colorName}`,
-        price: selectedSizeData.price,
-        image: selectedVariant.images[0]
-      }, quantity);
-      
-      setAddedToCart(true);
-      setTimeout(() => setAddedToCart(false), 3000);
     }
   };
 
@@ -548,7 +695,7 @@ export default function StanleyProTourPage() {
           <div className="space-y-6 lg:order-1">
             {/* Main Image - Professional Display with Swipe Support */}
             <div 
-              className={`relative aspect-square bg-white rounded-lg overflow-hidden shadow-lg border border-gray-200 transition-opacity duration-300 ${imageTransition ? 'opacity-0' : 'opacity-100'}`}
+              className={`relative aspect-square bg-white rounded-lg overflow-hidden border border-gray-200 transition-opacity duration-300 ${imageTransition ? 'opacity-0' : 'opacity-100'}`}
               onTouchStart={onTouchStart}
               onTouchMove={onTouchMove}
               onTouchEnd={onTouchEnd}
@@ -628,7 +775,7 @@ export default function StanleyProTourPage() {
                 
                 return (
                   <button
-                    key={variant.sku}
+                    key={`${selectedSizeData.id}-${idx}`}
                     onClick={() => handleVariantChange(idx)}
                     disabled={!variantInStock}
                     className="group relative"
@@ -829,7 +976,7 @@ export default function StanleyProTourPage() {
                   
                   return (
                     <button
-                      key={variant.sku}
+                      key={`${selectedSizeData.id}-${idx}`}
                       onClick={() => handleVariantChange(idx)}
                       disabled={!variantInStock}
                       className="group relative"
