@@ -15,7 +15,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
           {/* About */}
           <div>
-            <h3 className="text-lg font-bold text-gray-900 mb-4">EMPYRIS</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">STANLEY</h3>
             <p className="text-gray-600 text-sm leading-relaxed">
               {t.footerDescription}
             </p>
@@ -135,7 +135,7 @@ export default function Footer() {
         {/* Bottom Bar */}
                 <div className="mt-8 pt-8 border-t border-gray-200 text-center text-sm text-gray-600">
           <p>
-            © {new Date().getFullYear()} EMPYRIS. {t.allRightsReserved}
+            © {new Date().getFullYear()} STANLEY. {t.allRightsReserved}
           </p>
         </div>
       </div>

@@ -20,7 +20,7 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "EMPYRIS - Modern E-Commerce",
+  title: "STANLEY - Modern E-Commerce",
   description: "Your one-stop shop for premium quality products",
 };
 

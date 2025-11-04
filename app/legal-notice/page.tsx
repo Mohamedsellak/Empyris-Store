@@ -18,7 +18,7 @@ export default function LegalNoticePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Company Information</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>Company Name:</strong> EMPYRIS Ltd.<br />
+              <strong>Company Name:</strong> STANLEY Ltd.<br />
               <strong>Registered Office:</strong> 123 Oxford Street, London, W1D 2HX, United Kingdom
             </p>
 
@@ -47,7 +47,7 @@ export default function LegalNoticePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Intellectual Property</h2>
                         <p className="text-gray-700 leading-relaxed mb-4">
-              All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of EMPYRIS or its content suppliers and is protected by international copyright laws.
+              All content on this website, including but not limited to text, graphics, logos, images, and software, is the property of STANLEY or its content suppliers and is protected by international copyright laws.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Disclaimer</h2>
@@ -71,7 +71,7 @@ export default function LegalNoticePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Informations sur l&apos;Entreprise</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              <strong>Nom de l&apos;Entreprise:</strong> EMPYRIS Ltd.<br />
+              <strong>Nom de l&apos;Entreprise:</strong> STANLEY Ltd.<br />
               <strong>Siège Social:</strong> 123 Oxford Street, London, W1D 2HX, Royaume-Uni
             </p>
 
@@ -100,7 +100,7 @@ export default function LegalNoticePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Propriété Intellectuelle</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              Tout le contenu de ce site Web, y compris mais sans s&apos;y limiter, le texte, les graphiques, les logos, les images et les logiciels, est la propriété de EMPYRIS ou de ses fournisseurs de contenu et est protégé par les lois internationales sur le droit d&apos;auteur.
+              Tout le contenu de ce site Web, y compris mais sans s&apos;y limiter, le texte, les graphiques, les logos, les images et les logiciels, est la propriété de STANLEY ou de ses fournisseurs de contenu et est protégé par les lois internationales sur le droit d&apos;auteur.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">Clause de Non-Responsabilité</h2>

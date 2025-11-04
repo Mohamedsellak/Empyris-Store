@@ -89,7 +89,7 @@ export const translations = {
     // About Page
     aboutUs: 'About Us',
     ourStory: 'Our Story',
-    ourStoryText: 'Founded with a passion for quality and style, EMPYRIS has been providing customers with premium products since 2020. We believe in simplicity, elegance, and timeless design.',
+    ourStoryText: 'Founded with a passion for quality and style, STANLEY has been providing customers with premium products since 2020. We believe in simplicity, elegance, and timeless design.',
     ourMission: 'Our Mission',
     ourMissionText: 'To deliver exceptional products that enhance everyday life while maintaining the highest standards of quality and customer service.',
     ourValues: 'Our Values',
@@ -122,7 +122,7 @@ export const translations = {
     phone: 'Phone',
     phoneText: '+1 (555) 123-4567',
     email: 'Email',
-    emailText: 'support@empyris.com',
+    emailText: 'support@STANLEY.com',
     businessHours: 'Business Hours',
     businessHoursText: 'Monday - Friday: 9:00 AM - 6:00 PM\nSaturday: 10:00 AM - 4:00 PM\nSunday: Closed',
     monday: 'Monday',
@@ -230,7 +230,7 @@ export const translations = {
     // About Page
     aboutUs: 'À Propos de Nous',
     ourStory: 'Notre Histoire',
-    ourStoryText: 'Fondé avec une passion pour la qualité et le style, EMPYRIS fournit aux clients des produits premium depuis 2020. Nous croyons en la simplicité, l\'élégance et le design intemporel.',
+    ourStoryText: 'Fondé avec une passion pour la qualité et le style, STANLEY fournit aux clients des produits premium depuis 2020. Nous croyons en la simplicité, l\'élégance et le design intemporel.',
     ourMission: 'Notre Mission',
     ourMissionText: 'Offrir des produits exceptionnels qui améliorent la vie quotidienne tout en maintenant les plus hauts standards de qualité et de service client.',
     ourValues: 'Nos Valeurs',

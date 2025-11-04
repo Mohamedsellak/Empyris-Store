@@ -97,7 +97,7 @@ export default function TermsOfServicePage() {
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">7. Limitation de Responsabilité</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
-              En aucun cas EMPYRIS ou ses fournisseurs ne seront responsables de tout dommage (y compris, sans limitation, les dommages pour perte de données ou de profit) découlant de l&apos;utilisation ou de l&apos;impossibilité d&apos;utiliser notre service.
+              En aucun cas STANLEY ou ses fournisseurs ne seront responsables de tout dommage (y compris, sans limitation, les dommages pour perte de données ou de profit) découlant de l&apos;utilisation ou de l&apos;impossibilité d&apos;utiliser notre service.
             </p>
 
             <h2 className="text-2xl font-bold text-gray-900 mt-8 mb-4">8. Loi Applicable</h2>
