@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { getFeaturedProducts } from '@/lib/products';
+import { getFeaturedTumblers, getChristmasTumblers } from '@/lib/tumblersHelper';
 import ProductCard from '@/components/ProductCard';
 import BrandScroll from '@/components/BrandScroll';
 import HeroCarousel from '@/components/HeroCarousel';
@@ -10,7 +10,8 @@ import { useLanguage } from '@/context/LanguageContext';
 import { translations } from '@/lib/i18n';
 
 export default function Home() {
-  const featuredProducts = getFeaturedProducts();
+  const featuredProducts = getFeaturedTumblers();
+  const christmasProducts = getChristmasTumblers();
   const { language } = useLanguage();
   const t = translations[language];
 
@@ -32,7 +33,7 @@ export default function Home() {
           </div>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-            {[...featuredProducts].reverse().slice(0, 4).map((product) => (
+            {featuredProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
@@ -67,18 +68,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Featured Products Section */}
+      {/* Christmas Products Section */}
       <section className="py-8 md:py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6 md:gap-8">
-            {[...featuredProducts].reverse().slice(0, 4).map((product) => (
+            {christmasProducts.map((product) => (
               <ProductCard key={product.id} product={product} />
             ))}
           </div>
 
           <div className="text-center mt-8">
             <Link
-              href="/products"
+              href="/stanley1913"
               className="inline-block border-2 border-black text-black px-8 py-3 rounded-md font-medium hover:bg-black hover:text-white transition-colors duration-100"
             >
               {t.viewAllProducts}
