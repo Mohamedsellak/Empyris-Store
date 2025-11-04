@@ -48,10 +48,10 @@ export const productData: ProductData = {
       id: "14oz",
       name: "The Quencher ProTour Flip Straw Tumbler | 14 OZ",
       description:
-        "Compact and portable, perfect for kids or quick trips. Keeps drinks cold for hours in a cupholder-friendly design.",
+        "Introducing the iconic Quencher, now with the leakproof ProTour Flip Straw lid. The 14-ounce Quencher ProTour Flip Straw Tumbler makes hydration simple — flip up the built-in straw to sip, then snap it shut when you're done. Classic colors feature fresh graphics with a soft texture on the handle and two-tone lid. Your water stays ice cold for hours, thanks to double-wall vacuum insulation. It's ready to grab and go by the comfort-grip handle. 14 oz ProTour Flip Straw lid fits all 14 oz Quenchers. *Not Eligible For Promotions or Resell. Multiple & Large Orders Are Subject To Cancellation. 18/8 recycled stainless steel, Double-wall vacuum insulation, Leakproof ProTour Flip Straw lid, Removable spout, Replaceable seal, Textured comfort-grip handle, Fits most car cupholders, Dishwasher safe, BPA-free.",
       price: 30.0,
-      weight: "0.72 lbs",
-      dimensions: "4.8 x 3.2 x 6.9 in",
+      weight: "0.69 lbs",
+      dimensions: "4.80 x 3.07 x 7.24 in",
       variants: [
         {
           colorName: "Dew Drop",
@@ -185,7 +185,7 @@ export const productData: ProductData = {
       id: "20oz",
       name: "The Quencher ProTour Flip Straw Tumbler | 20 OZ",
       description:
-        "Your everyday tumbler — leakproof, durable, and designed for all-day hydration on the go.",
+        "Introducing the iconic Stanley Quencher, now with the leakproof ProTour Flip Straw lid. The 20-ounce Quencher ProTour Flip Straw Tumbler makes hydration simple — flip up the built-in straw to sip, then snap it shut when you're done. Classic colors feature fresh graphics with a soft texture on the handle and two-tone lid. Your water stays ice cold for hours, thanks to double-wall vacuum insulation. It's ready to grab by the comfort-grip handle and fits in your car's cup holder. 20 oz ProTour Flip Straw lid fits all 20 oz Quenchers. *Not Eligible For Promotions or Resell. Multiple & Large Orders Are Subject To Cancellation. 18/8 recycled stainless steel, Double-wall vacuum insulation, Leakproof ProTour Flip Straw lid, Removable spout, Replaceable seal, Textured comfort-grip handle, Fits most car cupholders, Dishwasher safe, BPA-free.",
       price: 35.0,
       weight: "0.84 lbs",
       dimensions: "5.27 x 3.54 x 7.55 in",
@@ -331,29 +331,261 @@ export const productData: ProductData = {
       id: "30oz",
       name: "The Quencher ProTour Flip Straw Tumbler | 30 OZ",
       description:
-        "Perfect balance between capacity and portability. Great for long drives or gym sessions.",
+        "Introducing the iconic Quencher, now with the leakproof ProTour Flip Straw lid. The 30-ounce Quencher ProTour Flip Straw Tumbler makes hydration simple — flip up the built-in straw to sip, then snap it shut when you're done. Classic colors feature fresh graphics with a soft texture on the handle and two-tone lid. Your water stays ice cold for hours, thanks to double-wall vacuum insulation. It's ready to grab by the comfort-grip handle and fits in your car's cup holder. 30 oz ProTour Flip Straw lid fits all 30 oz Quenchers. *Not Eligible For Promotions or Resell. Multiple & Large Orders Are Subject To Cancellation. 18/8 recycled stainless steel, Double-wall vacuum insulation, Leakproof ProTour Flip Straw lid, Removable spout, Replaceable seal, Textured comfort-grip handle, Fits most car cupholders, Dishwasher safe, BPA-free.",
       price: 40.0,
-      weight: "1.0 lbs",
-      dimensions: "6.2 x 3.8 x 8.2 in",
+      weight: "1.21 lbs",
+      dimensions: "5.43 x 3.54 x 9.84 in",
       variants: [
         {
           colorName: "Port Shimmer",
           sku: "10-12484-0501",
           images: [
-            "/assets/images/products/1/1.png",
-            "/assets/images/products/1/2.png",
-            "/assets/images/products/1/3.png",
-            "/assets/images/products/1/4.png"
+            "/assets/images/products/stanley1913/30OZ/1/1.png",
+            "/assets/images/products/stanley1913/30OZ/1/2.png",
+            "/assets/images/products/stanley1913/30OZ/1/3.png",
+          ]
+        },
+        {
+          colorName: "Ponderosa Shimmer",
+          sku: "10-12484-0502",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/2/1.png",
+            "/assets/images/products/stanley1913/30OZ/2/2.png",
+            "/assets/images/products/stanley1913/30OZ/2/3.png",
+          ]
+        },
+        {
+          colorName: "Prickly Pear",
+          sku: "10-12484-0508",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/3/1.png",
+            "/assets/images/products/stanley1913/30OZ/3/2.png",
+            "/assets/images/products/stanley1913/30OZ/3/3.png",
           ]
         },
         {
           colorName: "Cashmere",
-          sku: "10-12484-0502",
+          sku: "10-12484-0503",
           images: [
-            "/assets/images/products/3/1.png",
-            "/assets/images/products/3/2.png",
-            "/assets/images/products/3/3.png",
-            "/assets/images/products/3/4.png"
+            "/assets/images/products/stanley1913/30OZ/4/1.png",
+            "/assets/images/products/stanley1913/30OZ/4/2.png",
+            "/assets/images/products/stanley1913/30OZ/4/3.png",
+          ]
+        },
+        {
+          colorName: "Juniper",
+          sku: "10-12484-0504",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/5/1.png",
+            "/assets/images/products/stanley1913/30OZ/5/2.png",
+            "/assets/images/products/stanley1913/30OZ/5/3.png",
+          ]
+        },
+        {
+          colorName: "Mocha Latte",
+          sku: "10-12484-0505",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/6/1.png",
+            "/assets/images/products/stanley1913/30OZ/6/2.png",
+            "/assets/images/products/stanley1913/30OZ/6/3.png",
+          ]
+        },
+        {
+          colorName: "Cream Moon",
+          sku: "10-12484-0506",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/7/1.png",
+            "/assets/images/products/stanley1913/30OZ/7/2.png",
+            "/assets/images/products/stanley1913/30OZ/7/3.png",
+          ]
+        },
+        {
+          colorName: "Pistachio",
+          sku: "10-12484-0507",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/8/1.png",
+            "/assets/images/products/stanley1913/30OZ/8/2.png",
+            "/assets/images/products/stanley1913/30OZ/8/3.png",
+          ]
+        },
+        {
+          colorName: "Pomelo",
+          sku: "10-12484-0509",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/9/1.png",
+            "/assets/images/products/stanley1913/30OZ/9/2.png",
+            "/assets/images/products/stanley1913/30OZ/9/3.png",
+          ]
+        },
+        {
+          colorName: "Hot Coral Fade",
+          sku: "10-12484-0510",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/10/1.png",
+            "/assets/images/products/stanley1913/30OZ/10/2.png",
+            "/assets/images/products/stanley1913/30OZ/10/3.png",
+          ]
+        },
+        {
+          colorName: "Twilight",
+          sku: "10-12484-0511",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/11/1.png",
+            "/assets/images/products/stanley1913/30OZ/11/2.png",
+            "/assets/images/products/stanley1913/30OZ/11/3.png",
+          ]
+        },
+        {
+          colorName: "Cherry Blossom",
+          sku: "10-12484-0512",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/12/1.png",
+            "/assets/images/products/stanley1913/30OZ/12/2.png",
+            "/assets/images/products/stanley1913/30OZ/12/3.png",
+          ]
+        },
+        {
+          colorName: "Hydrangea",
+          sku: "10-12484-0513",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/13/1.png",
+            "/assets/images/products/stanley1913/30OZ/13/2.png",
+            "/assets/images/products/stanley1913/30OZ/13/3.png",
+          ]
+        },
+        {
+          colorName: "Sage Grey",
+          sku: "10-12484-0514",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/14/1.png",
+            "/assets/images/products/stanley1913/30OZ/14/2.png",
+            "/assets/images/products/stanley1913/30OZ/14/3.png",
+          ]
+        },
+        {
+          colorName: "Toast",
+          sku: "10-12484-0515",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/15/1.png",
+            "/assets/images/products/stanley1913/30OZ/15/2.png",
+            "/assets/images/products/stanley1913/30OZ/15/3.png",
+          ]
+        },
+        {
+          colorName: "Dried Pine",
+          sku: "10-12484-0516",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/16/1.png",
+            "/assets/images/products/stanley1913/30OZ/16/2.png",
+            "/assets/images/products/stanley1913/30OZ/16/3.png",
+          ]
+        },
+        {
+          colorName: "Chalk",
+          sku: "10-12484-0517",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/17/1.png",
+            "/assets/images/products/stanley1913/30OZ/17/2.png",
+            "/assets/images/products/stanley1913/30OZ/17/3.png",
+          ]
+        },
+        {
+          colorName: "Cream",
+          sku: "10-12484-0518",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/18/1.png",
+            "/assets/images/products/stanley1913/30OZ/18/2.png",
+            "/assets/images/products/stanley1913/30OZ/18/3.png",
+          ]
+        },
+        {
+          colorName: "Black Fade",
+          sku: "10-12484-0520",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/19/1.png",
+            "/assets/images/products/stanley1913/30OZ/19/2.png",
+            "/assets/images/products/stanley1913/30OZ/19/3.png",
+          ]
+        },
+        {
+          colorName: "Frost Fade",
+          sku: "10-12484-0521",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/20/1.png",
+            "/assets/images/products/stanley1913/30OZ/20/2.png",
+            "/assets/images/products/stanley1913/30OZ/20/3.png",
+          ]
+        },
+        {
+          colorName: "Rose Quartz Fade",
+          sku: "10-12484-0522",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/21/1.png",
+            "/assets/images/products/stanley1913/30OZ/21/2.png",
+            "/assets/images/products/stanley1913/30OZ/21/3.png",
+          ]
+        },
+        {
+          colorName: "Azure Fade",
+          sku: "10-12484-0523",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/22/1.png",
+            "/assets/images/products/stanley1913/30OZ/22/2.png",
+            "/assets/images/products/stanley1913/30OZ/22/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0524",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/23/1.png",
+            "/assets/images/products/stanley1913/30OZ/23/2.png",
+            "/assets/images/products/stanley1913/30OZ/23/3.png",
+          ]
+        },
+        {
+          colorName: "Black 2.0",
+          sku: "10-12484-0525",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/24/1.png",
+            "/assets/images/products/stanley1913/30OZ/24/2.png",
+            "/assets/images/products/stanley1913/30OZ/24/3.png",
+          ]
+        },
+        {
+          colorName: "Rose Quartz",
+          sku: "10-12484-0526",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/25/1.png",
+            "/assets/images/products/stanley1913/30OZ/25/2.png",
+            "/assets/images/products/stanley1913/30OZ/25/3.png",
+          ]
+        },
+        {
+          colorName: "Cream Fade",
+          sku: "10-12484-0527",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/26/1.png",
+            "/assets/images/products/stanley1913/30OZ/26/2.png",
+            "/assets/images/products/stanley1913/30OZ/26/3.png",
+          ]
+        },
+        {
+          colorName: "Goldenrod Fade",
+          sku: "10-12484-0528",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/27/1.png",
+            "/assets/images/products/stanley1913/30OZ/27/2.png",
+            "/assets/images/products/stanley1913/30OZ/27/3.png",
+          ]
+        },
+        {
+          colorName: "Espresso Gold",
+          sku: "10-12484-0529",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/28/1.png",
+            "/assets/images/products/stanley1913/30OZ/28/2.png",
+            "/assets/images/products/stanley1913/30OZ/28/3.png",
           ]
         }
       ]
@@ -362,20 +594,261 @@ export const productData: ProductData = {
       id: "40oz",
       name: "The Quencher ProTour Flip Straw Tumbler | 40 OZ",
       description:
-        "For all-day hydration and adventurers who need more capacity. Still fits in most car cupholders.",
+        "Introducing the iconic Quencher, now with the leakproof ProTour Flip Straw lid. The 40-ounce Quencher ProTour Flip Straw Tumbler makes hydration simple — flip up the built-in straw to sip, then snap it shut when you're done. Classic colors feature fresh graphics with a soft texture on the handle and two-tone lid. Your water stays ice cold for hours, thanks to double-wall vacuum insulation. It's ready to grab by the comfort-grip handle and fits in your car's cupholder. 40 oz ProTour Flip Straw lid fits all 40 oz Quenchers. *Not Eligible For Promotions or Resell. Multiple & Large Orders Are Subject To Cancellation. 18/8 recycled stainless steel, Double-wall vacuum insulation, Leakproof ProTour Flip Straw lid, Removable spout, Replaceable seal, Textured comfort-grip handle, Fits most car cupholders, Dishwasher safe, BPA-free.",
       price: 45.0,
-      weight: "1.2 lbs",
-      dimensions: "6.8 x 4.2 x 9.1 in",
+      weight: "1.49 lbs",
+      dimensions: "5.82 x 3.93 x 10.78 in",
       variants: [
         {
-          colorName: "Rose Petal Motion",
-          sku: "10-12484-0601",
+          colorName: "Port Shimmer",
+          sku: "10-12484-0501",
           images: [
-            "/assets/images/products/2/1.png",
-            "/assets/images/products/2/2.png",
-            "/assets/images/products/2/3.png",
-            "/assets/images/products/2/4.png",
-            "/assets/images/products/2/5.png"
+            "/assets/images/products/stanley1913/30OZ/1/1.png",
+            "/assets/images/products/stanley1913/30OZ/1/2.png",
+            "/assets/images/products/stanley1913/30OZ/1/3.png",
+          ]
+        },
+        {
+          colorName: "Ponderosa Shimmer",
+          sku: "10-12484-0502",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/2/1.png",
+            "/assets/images/products/stanley1913/30OZ/2/2.png",
+            "/assets/images/products/stanley1913/30OZ/2/3.png",
+          ]
+        },
+        {
+          colorName: "Prickly Pear",
+          sku: "10-12484-0508",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/3/1.png",
+            "/assets/images/products/stanley1913/30OZ/3/2.png",
+            "/assets/images/products/stanley1913/30OZ/3/3.png",
+          ]
+        },
+        {
+          colorName: "Cashmere",
+          sku: "10-12484-0503",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/4/1.png",
+            "/assets/images/products/stanley1913/30OZ/4/2.png",
+            "/assets/images/products/stanley1913/30OZ/4/3.png",
+          ]
+        },
+        {
+          colorName: "Juniper",
+          sku: "10-12484-0504",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/5/1.png",
+            "/assets/images/products/stanley1913/30OZ/5/2.png",
+            "/assets/images/products/stanley1913/30OZ/5/3.png",
+          ]
+        },
+        {
+          colorName: "Mocha Latte",
+          sku: "10-12484-0505",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/6/1.png",
+            "/assets/images/products/stanley1913/30OZ/6/2.png",
+            "/assets/images/products/stanley1913/30OZ/6/3.png",
+          ]
+        },
+        {
+          colorName: "Cream Moon",
+          sku: "10-12484-0506",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/7/1.png",
+            "/assets/images/products/stanley1913/30OZ/7/2.png",
+            "/assets/images/products/stanley1913/30OZ/7/3.png",
+          ]
+        },
+        {
+          colorName: "Pistachio",
+          sku: "10-12484-0507",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/8/1.png",
+            "/assets/images/products/stanley1913/30OZ/8/2.png",
+            "/assets/images/products/stanley1913/30OZ/8/3.png",
+          ]
+        },
+        {
+          colorName: "Pomelo",
+          sku: "10-12484-0509",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/9/1.png",
+            "/assets/images/products/stanley1913/30OZ/9/2.png",
+            "/assets/images/products/stanley1913/30OZ/9/3.png",
+          ]
+        },
+        {
+          colorName: "Hot Coral Fade",
+          sku: "10-12484-0510",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/10/1.png",
+            "/assets/images/products/stanley1913/30OZ/10/2.png",
+            "/assets/images/products/stanley1913/30OZ/10/3.png",
+          ]
+        },
+        {
+          colorName: "Twilight",
+          sku: "10-12484-0511",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/11/1.png",
+            "/assets/images/products/stanley1913/30OZ/11/2.png",
+            "/assets/images/products/stanley1913/30OZ/11/3.png",
+          ]
+        },
+        {
+          colorName: "Cherry Blossom",
+          sku: "10-12484-0512",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/12/1.png",
+            "/assets/images/products/stanley1913/30OZ/12/2.png",
+            "/assets/images/products/stanley1913/30OZ/12/3.png",
+          ]
+        },
+        {
+          colorName: "Hydrangea",
+          sku: "10-12484-0513",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/13/1.png",
+            "/assets/images/products/stanley1913/30OZ/13/2.png",
+            "/assets/images/products/stanley1913/30OZ/13/3.png",
+          ]
+        },
+        {
+          colorName: "Sage Grey",
+          sku: "10-12484-0514",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/14/1.png",
+            "/assets/images/products/stanley1913/30OZ/14/2.png",
+            "/assets/images/products/stanley1913/30OZ/14/3.png",
+          ]
+        },
+        {
+          colorName: "Toast",
+          sku: "10-12484-0515",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/15/1.png",
+            "/assets/images/products/stanley1913/30OZ/15/2.png",
+            "/assets/images/products/stanley1913/30OZ/15/3.png",
+          ]
+        },
+        {
+          colorName: "Dried Pine",
+          sku: "10-12484-0516",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/16/1.png",
+            "/assets/images/products/stanley1913/30OZ/16/2.png",
+            "/assets/images/products/stanley1913/30OZ/16/3.png",
+          ]
+        },
+        {
+          colorName: "Chalk",
+          sku: "10-12484-0517",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/17/1.png",
+            "/assets/images/products/stanley1913/30OZ/17/2.png",
+            "/assets/images/products/stanley1913/30OZ/17/3.png",
+          ]
+        },
+        {
+          colorName: "Cream",
+          sku: "10-12484-0518",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/18/1.png",
+            "/assets/images/products/stanley1913/30OZ/18/2.png",
+            "/assets/images/products/stanley1913/30OZ/18/3.png",
+          ]
+        },
+        {
+          colorName: "Black Fade",
+          sku: "10-12484-0520",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/19/1.png",
+            "/assets/images/products/stanley1913/30OZ/19/2.png",
+            "/assets/images/products/stanley1913/30OZ/19/3.png",
+          ]
+        },
+        {
+          colorName: "Frost Fade",
+          sku: "10-12484-0521",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/20/1.png",
+            "/assets/images/products/stanley1913/30OZ/20/2.png",
+            "/assets/images/products/stanley1913/30OZ/20/3.png",
+          ]
+        },
+        {
+          colorName: "Rose Quartz Fade",
+          sku: "10-12484-0522",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/21/1.png",
+            "/assets/images/products/stanley1913/30OZ/21/2.png",
+            "/assets/images/products/stanley1913/30OZ/21/3.png",
+          ]
+        },
+        {
+          colorName: "Azure Fade",
+          sku: "10-12484-0523",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/22/1.png",
+            "/assets/images/products/stanley1913/30OZ/22/2.png",
+            "/assets/images/products/stanley1913/30OZ/22/3.png",
+          ]
+        },
+        {
+          colorName: "Frost",
+          sku: "10-12484-0524",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/23/1.png",
+            "/assets/images/products/stanley1913/30OZ/23/2.png",
+            "/assets/images/products/stanley1913/30OZ/23/3.png",
+          ]
+        },
+        {
+          colorName: "Black 2.0",
+          sku: "10-12484-0525",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/24/1.png",
+            "/assets/images/products/stanley1913/30OZ/24/2.png",
+            "/assets/images/products/stanley1913/30OZ/24/3.png",
+          ]
+        },
+        {
+          colorName: "Rose Quartz",
+          sku: "10-12484-0526",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/25/1.png",
+            "/assets/images/products/stanley1913/30OZ/25/2.png",
+            "/assets/images/products/stanley1913/30OZ/25/3.png",
+          ]
+        },
+        {
+          colorName: "Cream Fade",
+          sku: "10-12484-0527",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/26/1.png",
+            "/assets/images/products/stanley1913/30OZ/26/2.png",
+            "/assets/images/products/stanley1913/30OZ/26/3.png",
+          ]
+        },
+        {
+          colorName: "Goldenrod Fade",
+          sku: "10-12484-0528",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/27/1.png",
+            "/assets/images/products/stanley1913/30OZ/27/2.png",
+            "/assets/images/products/stanley1913/30OZ/27/3.png",
+          ]
+        },
+        {
+          colorName: "Espresso Gold",
+          sku: "10-12484-0529",
+          images: [
+            "/assets/images/products/stanley1913/30OZ/28/1.png",
+            "/assets/images/products/stanley1913/30OZ/28/2.png",
+            "/assets/images/products/stanley1913/30OZ/28/3.png",
           ]
         }
       ]
@@ -384,13 +857,13 @@ export const productData: ProductData = {
       id: "64oz",
       name: "The Quencher ProTour Flip Straw Tumbler | 64 OZ",
       description:
-        "Maximum hydration for the longest adventures. Perfect for all-day trips, workouts, or sharing with friends.",
+        "Introducing the iconic Stanley Quencher, now with the leakproof Flip Straw lid. The 64-ounce Quencher ProTour Flip Straw Tumbler makes hydration simple — flip up the built-in straw to sip, then snap it shut when you're done. Classic colors feature fresh graphics with a soft texture on the handle and two-tone lid. Your water stays ice cold for hours, thanks to double-wall vacuum insulation. It's ready to grab and go by the comfort-grip handle. 64 oz ProTour Flip Straw lid fits all 64 oz Quenchers. *Not Eligible For Promotions or Resell. Multiple & Large Orders Are Subject To Cancellation. 18/8 recycled stainless steel, Double-wall vacuum insulation, Leakproof ProTour Flip Straw lid, Removable spout, Replaceable seal, Textured comfort-grip handle, Fits most car cupholders, Dishwasher safe, BPA-free.",
       price: 50.0,
-      weight: "1.5 lbs",
-      dimensions: "7.5 x 4.8 x 10.5 in",
+      weight: "0.69 lbs",
+      dimensions: "4.80 x 3.07 x 7.24 in",
       variants: [
         {
-          colorName: "Charcoal",
+          colorName: "Frost Fade",
           sku: "10-12484-0701",
           images: [
             "/assets/images/products/stanley1913/64OZ/1/1.png",
@@ -399,7 +872,7 @@ export const productData: ProductData = {
           ]
         },
         {
-          colorName: "Cream",
+          colorName: "Rose Quartz Fade",
           sku: "10-12484-0702",
           images: [
             "/assets/images/products/stanley1913/64OZ/2/1.png",
@@ -408,7 +881,7 @@ export const productData: ProductData = {
           ]
         },
         {
-          colorName: "Rose Quartz",
+          colorName: "Cream Fade",
           sku: "10-12484-0703",
           images: [
             "/assets/images/products/stanley1913/64OZ/3/1.png",
@@ -417,7 +890,7 @@ export const productData: ProductData = {
           ]
         },
         {
-          colorName: "Pool",
+          colorName: "Azure Fade",
           sku: "10-12484-0704",
           images: [
             "/assets/images/products/stanley1913/64OZ/4/1.png",
@@ -426,12 +899,21 @@ export const productData: ProductData = {
           ]
         },
         {
-          colorName: "Black",
+          colorName: "Black Fade",
           sku: "10-12484-0705",
           images: [
             "/assets/images/products/stanley1913/64OZ/5/1.png",
             "/assets/images/products/stanley1913/64OZ/5/2.png",
             "/assets/images/products/stanley1913/64OZ/5/3.png"
+          ]
+        },
+        {
+          colorName: "Hot Coral Fade",
+          sku: "10-12484-0706",
+          images: [
+            "/assets/images/products/stanley1913/64OZ/6/1.png",
+            "/assets/images/products/stanley1913/64OZ/6/2.png",
+            "/assets/images/products/stanley1913/64OZ/6/3.png"
           ]
         }
       ]
@@ -639,7 +1121,7 @@ export default function StanleyProTourPage() {
               )}
             </div>
 
-            {/* Stock & SKU Info */}
+            {/* Stock Info */}
             <div className="flex items-center gap-4 text-sm text-gray-600 mb-4">
               <div className="flex items-center gap-1.5">
                 {isInStock ? (
@@ -654,8 +1136,6 @@ export default function StanleyProTourPage() {
                   </>
                 )}
               </div>
-              <span className="text-gray-400">•</span>
-              <span>SKU: {selectedVariant.sku}</span>
             </div>
           </div>
 
@@ -760,70 +1240,74 @@ export default function StanleyProTourPage() {
           </div>
 
           {/* Mobile Only - Color Selector */}
-          <div className="lg:hidden space-y-3">
-            <div className="flex items-center justify-between">
+          <div className="lg:hidden space-y-3 mt-6">
+            {/* Compact Color Swatches - Centered Container */}
+            <div className="flex justify-center">
+              <div className="flex flex-wrap gap-2">
+                {selectedSizeData.variants.map((variant, idx) => {
+                  const variantInStock = variant.inStock !== false;
+                  const isSelected = selectedVariantIndex === idx;
+                  
+                  return (
+                    <button
+                      key={`${selectedSizeData.id}-${idx}`}
+                      onClick={() => handleVariantChange(idx)}
+                      disabled={!variantInStock}
+                      className="group relative"
+                      title={variant.colorName}
+                    >
+                      {/* Compact Color Square */}
+                      <div className={`
+                        relative w-12 h-12 bg-gray-50 overflow-hidden transition-all duration-200
+                        ${isSelected 
+                          ? 'ring-2 ring-black ring-offset-2 shadow-md' 
+                          : variantInStock
+                          ? 'ring-1 ring-gray-300 hover:ring-2 hover:ring-gray-500'
+                          : 'ring-1 ring-gray-200 opacity-40 cursor-not-allowed'
+                        }
+                      `}>
+                        <Image
+                          src={variant.images[0]}
+                          alt={variant.colorName}
+                          fill
+                          className="object-cover"
+                          sizes="48px"
+                        />
+                        
+                        {/* Out of Stock X */}
+                        {!variantInStock && (
+                          <div className="absolute inset-0 bg-white/70 flex items-center justify-center">
+                            <X className="w-4 h-4 text-red-500" />
+                          </div>
+                        )}
+                        
+                        {/* Selected Check */}
+                        {isSelected && (
+                          <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
+                            <div className="bg-white rounded-full p-0.5 shadow-sm">
+                              <Check className="w-3 h-3 text-black" />
+                            </div>
+                          </div>
+                        )}
+                      </div>
+                      
+                      {/* Tooltip */}
+                      <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1.5 px-2.5 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none whitespace-nowrap z-20 shadow-lg">
+                        {variant.colorName}
+                        {!variantInStock && <span className="text-red-300 ml-1">(×)</span>}
+                      </div>
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            {/* Color Name and SKU - Below Variants - Left Aligned */}
+            <div className="space-y-1 pt-2">
               <h3 className="font-semibold text-gray-900">
                 {isEn ? 'Color' : 'Couleur'}: <span className="font-normal text-gray-600">{selectedVariant.colorName}</span>
               </h3>
-            </div>
-
-            {/* Compact Color Swatches */}
-            <div className="flex flex-wrap gap-2">
-              {selectedSizeData.variants.map((variant, idx) => {
-                const variantInStock = variant.inStock !== false;
-                const isSelected = selectedVariantIndex === idx;
-                
-                return (
-                  <button
-                    key={`${selectedSizeData.id}-${idx}`}
-                    onClick={() => handleVariantChange(idx)}
-                    disabled={!variantInStock}
-                    className="group relative"
-                    title={variant.colorName}
-                  >
-                    {/* Compact Color Circle */}
-                    <div className={`
-                      relative w-12 h-12 rounded-full overflow-hidden transition-all duration-200
-                      ${isSelected 
-                        ? 'ring-2 ring-black ring-offset-2 shadow-md' 
-                        : variantInStock
-                        ? 'ring-1 ring-gray-300 hover:ring-2 hover:ring-gray-500'
-                        : 'ring-1 ring-gray-200 opacity-40 cursor-not-allowed'
-                      }
-                    `}>
-                      <Image
-                        src={variant.images[0]}
-                        alt={variant.colorName}
-                        fill
-                        className="object-cover"
-                        sizes="48px"
-                      />
-                      
-                      {/* Out of Stock X */}
-                      {!variantInStock && (
-                        <div className="absolute inset-0 bg-white/70 flex items-center justify-center">
-                          <X className="w-4 h-4 text-red-500" />
-                        </div>
-                      )}
-                      
-                      {/* Selected Check */}
-                      {isSelected && (
-                        <div className="absolute inset-0 bg-black/10 flex items-center justify-center">
-                          <div className="bg-white rounded-full p-0.5 shadow-sm">
-                            <Check className="w-3 h-3 text-black" />
-                          </div>
-                        </div>
-                      )}
-                    </div>
-                    
-                    {/* Tooltip */}
-                    <div className="absolute left-1/2 -translate-x-1/2 bottom-full mb-1.5 px-2.5 py-1 bg-gray-900 text-white text-xs rounded opacity-0 group-hover:opacity-100 transition-opacity duration-150 pointer-events-none whitespace-nowrap z-20 shadow-lg">
-                      {variant.colorName}
-                      {!variantInStock && <span className="text-red-300 ml-1">(×)</span>}
-                    </div>
-                  </button>
-                );
-              })}
+              <p className="text-sm text-gray-600"><span className="font-bold text-gray-600">SKU:</span> {selectedVariant.sku}</p>
             </div>
           </div>
 
@@ -982,9 +1466,9 @@ export default function StanleyProTourPage() {
                       className="group relative"
                       title={variant.colorName}
                     >
-                      {/* Compact Color Circle */}
+                      {/* Compact Color Square */}
                       <div className={`
-                        relative w-12 h-12 rounded-full overflow-hidden transition-all duration-200
+                        relative w-12 h-12 bg-gray-50 overflow-hidden transition-all duration-200
                         ${isSelected 
                           ? 'ring-2 ring-black ring-offset-2 shadow-md' 
                           : variantInStock
@@ -1084,18 +1568,7 @@ export default function StanleyProTourPage() {
                 {/* Description */}
                 <div className="space-y-4 text-gray-700 leading-relaxed text-base">
                   <p>
-                    Introducing the iconic Quencher, now with the leakproof ProTour Flip Straw lid. The 30-ounce Quencher ProTour Flip Straw Tumbler makes hydration simple — flip up the built-in straw to sip, then snap it shut when you're done.
-                  </p>
-                  <p>
-                    Classic colors feature fresh graphics with a soft texture on the handle and two-tone lid. Your water stays ice cold for hours, thanks to double-wall vacuum insulation. It's ready to grab by the comfort-grip handle and fits in your car's cup holder.
-                  </p>
-                  <p className="text-sm">
-                    30 oz ProTour Flip Straw lid fits all 30 oz Quenchers
-                  </p>
-                  <p className="text-sm text-gray-600">
-                    <a href="#" className="italic underline hover:text-gray-900">
-                      *Not Eligible For Promotions or Resell. Multiple & Large Orders Are Subject To Cancellation.
-                    </a>
+                    {selectedSizeData.description}
                   </p>
                 </div>
 
@@ -1445,34 +1918,7 @@ export default function StanleyProTourPage() {
           </div>
         </div>
       </section>
-
-      {/* Newsletter Section */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="max-w-2xl mx-auto bg-gradient-to-r from-gray-900 to-gray-800 rounded-3xl shadow-2xl p-12 text-center text-white">
-          <h2 className="text-3xl lg:text-4xl font-bold mb-4">
-            {isEn ? 'Join the Stanley Family' : 'Rejoignez la Famille Stanley'}
-          </h2>
-          <p className="text-gray-300 mb-8">
-            {isEn 
-              ? 'Get exclusive offers, new product launches, and hydration tips delivered to your inbox.'
-              : 'Recevez des offres exclusives, des lancements de nouveaux produits et des conseils d\'hydratation dans votre boîte de réception.'
-            }
-          </p>
-          <form className="flex flex-col sm:flex-row gap-4">
-            <input
-              type="email"
-              placeholder={isEn ? 'Enter your email' : 'Entrez votre email'}
-              className="flex-1 px-6 py-4 rounded-full text-gray-900 focus:outline-none focus:ring-4 focus:ring-white/50"
-            />
-            <button
-              type="submit"
-              className="bg-white text-black px-8 py-4 rounded-full font-bold hover:bg-gray-200 transition-all hover:scale-105"
-            >
-              {isEn ? 'Subscribe' : 'S\'abonner'}
-            </button>
-          </form>
-        </div>
-      </section>
+      
     </div>
   );
 }
