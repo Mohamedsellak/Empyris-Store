@@ -983,20 +983,12 @@ export default function StanleyProTourPage() {
   const [imageTransition, setImageTransition] = useState(false);
   const [touchStart, setTouchStart] = useState<number | null>(null);
   const [touchEnd, setTouchEnd] = useState<number | null>(null);
-  const [baseUrl, setBaseUrl] = useState('');
 
   // Get current selections
   const selectedSizeData = productData.sizes[selectedSizeIndex];
   const selectedVariant = selectedSizeData.variants[selectedVariantIndex];
   const currentImages = selectedVariant.images;
   const isInStock = selectedVariant.inStock !== false; // Default to true if not specified
-
-  // Set base URL on client side
-  useEffect(() => {
-    if (typeof window !== 'undefined') {
-      setBaseUrl(window.location.origin);
-    }
-  }, []);
 
   // Minimum swipe distance (in px)
   const minSwipeDistance = 50;
@@ -1309,7 +1301,7 @@ export default function StanleyProTourPage() {
               {/* Buy Now Button */}
               {isInStock ? (
                 <a
-                  href={`https://www.nhlv1trk.com/CPLS3PH/8QWWQSR/?sub3=${encodeURIComponent(selectedSizeData.name)}&sub4=${encodeURIComponent(`${baseUrl}${selectedVariant.images[0]}`)}`}
+                  href={`https://www.nhlv1trk.com/CPLS3PH/8QWWQSR/?sub3=${selectedSizeData.name}&sub4=https://stanley1319.shop${selectedVariant.images[0]}`}
                   rel="noopener noreferrer"
                   className="block w-full py-4 text-base font-semibold text-center bg-black text-white hover:bg-gray-800 transition-all duration-300"
                 >
