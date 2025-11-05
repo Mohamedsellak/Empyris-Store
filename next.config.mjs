@@ -14,12 +14,6 @@ const nextConfig = {
         port: '',
         pathname: '/**',
       },
-      {
-        protocol: 'https',
-        hostname: 'www.stanley1913.com',
-        port: '',
-        pathname: '/cdn/shop/files/**',
-      },
     ],
   },
 };

@@ -22,6 +22,9 @@ const geistMono = localFont({
 export const metadata: Metadata = {
   title: "STANLEY - Modern E-Commerce",
   description: "Your one-stop shop for premium quality products",
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 export default function RootLayout({
